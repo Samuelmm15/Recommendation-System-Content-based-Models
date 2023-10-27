@@ -27,14 +27,10 @@ def read_input_file(input_file):
           rows = []
           for line in file:
             rows.append(line.strip().split())
-          print()
-          print("Would you like to see the content of the file? [y/n]")
-          answer = input()
-          if answer == "y":
-            print()
-            print("The content of the file is the following:")
-            for line in rows:
-              print(line)
+          # print()
+          # print("The content of the file is the following:")
+          # for line in rows:
+          #   print(line)
       except FileNotFoundError:
         print(f"The file {input_file} doesn't exist.")
         sys.exit(1)

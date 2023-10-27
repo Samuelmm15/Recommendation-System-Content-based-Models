@@ -10,6 +10,8 @@ import os
 import sys
 import numpy as np
 
+from read_input_file_system import read_input_file
+
 def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms_file):
   print("Welcome to the recommendation system!")
   print()
@@ -17,3 +19,7 @@ def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms
   print("Input file: " + str(plain_text_file))
   print("Stop Word file: " + str(stop_word_file))
   print("Lematization of terms file " + str(lematization_of_terms_file))
+  
+  plain_text_data = read_input_file(plain_text_file)
+  stop_word_data = read_input_file(stop_word_file)
+  lematization_of_terms_data = read_input_file(lematization_of_terms_file)

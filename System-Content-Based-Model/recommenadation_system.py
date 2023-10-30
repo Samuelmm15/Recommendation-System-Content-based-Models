@@ -13,6 +13,7 @@ import string
 
 from read_input_files import read_input_files
 from read_input_files import read_input_lines_files
+from read_input_files import read_lematization_of_terms_file
 
 def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms_file):
   print("Welcome to the recommendation system!")
@@ -48,27 +49,25 @@ def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms
     documents[i] = [word for word in documents[i] if word not in stop_word_data]
 
   # Comprobación del resultado
-  for i in documents:
-    print(i)
+  # for i in documents:
+  #   print(i)
     
   # Lectura del dichero de lematización.
-  lematization_of_terms_data = read_input_lines_files(lematization_of_terms_file)
+  lematization_of_terms_data = read_lematization_of_terms_file(lematization_of_terms_file)
   
-  # Aplicar el dichero de lematización.
-
+  # Comprobación del resultado
+  # print(lematization_of_terms_data)
+  
+  # Aplicar el fichero de lematización.
+  for i in range(len(documents)):
+    for j in range(len(documents[i])):
+      for k in range(len(lematization_of_terms_data)):
+        if documents[i][j] in lematization_of_terms_data[k][0]:
+          documents[i][j] = lematization_of_terms_data[k][1]
+          break
+  
+  # Comprobación del resultado
+  # print(documents)
+  
   # Creación de la matriz de datos.
-
   
-  # At this point starts the implementation of the content based model.
-  
-  # # First of all, we need to obtain the different terms of the plain text file.
-  # terms = []
-  # for line in plain_text_data:
-  #   for term in line:
-  #     if term not in terms:
-  #       terms.append(term)
-  
-  # # Comprobación de que se han obtenido bien los términos.
-  # print()
-  # print("The different terms of the plain text file are the following:")
-  # print(terms)

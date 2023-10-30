@@ -27,10 +27,6 @@ def read_input_lines_files(input_file):
           rows = []
           for line in file:
             rows.append(line.replace("\n", ""))
-          # print()
-          # print("The content of the file is the following:")
-          # for line in rows:
-          #   print(line)
       except FileNotFoundError:
         print(f"The file {input_file} doesn't exist.")
         sys.exit(1)
@@ -49,7 +45,6 @@ def read_input_files(input_file):
       sys.exit(1) # Exit with error type 1.
     else:
       try:
-        
         with open(input_file, 'r', encoding='utf-8-sig') as file: # Open the file in read mode.
           string = ""
           for line in file:
@@ -65,3 +60,32 @@ def read_input_files(input_file):
         sys.exit(1)
         
       return string
+    
+def read_lematization_of_terms_file(input_file):
+  # To start with, we check if the input file exists and if it is a file.
+  if os.path.exists(input_file) and os.path.isfile(input_file):
+    extension = os.path.splitext(input_file)[1]
+    if extension != ".txt":
+      print("The input file must be a `.txt` file.")
+      sys.exit(1)
+    else:
+      try:
+        with open(input_file, 'r', encoding='utf-8-sig') as file: # Open the file in read mode.
+          # Tener en cuenta que el formato del fichero es el siguiente:
+          # "is":"be", ....
+          string = ""
+          for line in file:
+            string += line.replace("\n", "")
+          string = string.replace("{", "")
+          string = string.replace("}", "")
+          lematization_list = string.split(",")
+          for i in range(len(lematization_list)):
+            lematization_list[i] = lematization_list[i].replace("\"", "")
+            lematization_list[i] = lematization_list[i].split(":")
+      except FileNotFoundError:
+        print(f"The file {input_file} doesn't exist.")
+        sys.exit(1)
+      except Exception as e:
+        print(f"An error occurred while reading the file: {str(e)}")
+        sys.exit(1)
+    return lematization_list

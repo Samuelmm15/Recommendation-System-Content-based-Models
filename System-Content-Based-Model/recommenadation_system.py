@@ -9,6 +9,7 @@
 import os
 import sys
 import numpy as np
+import string
 
 from read_input_files import read_input_files
 from read_input_files import read_input_lines_files
@@ -30,8 +31,31 @@ def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms
   for line in plain_text_data:
     path = "../Data/Documents/" + line.replace("\n", "")
     documents.append(read_input_files(str(path)))
+
+  # Eliminación de la puntuación.
+  translator = str.maketrans("", "", string.punctuation)
+
+  for i in range(len(documents)):
+    documents[i] = documents[i].translate(translator)
   
-  # lematization_of_terms_data = read_input_file(lematization_of_terms_file)
+  # Creación de lista de palabras por documento.
+
+  # Eliminación de las palabras de parada.
+
+      
+  # Comprobación del resultado
+  for i in documents:
+    print(i)
+  
+
+
+  # Lectura del dichero de lematización.
+  # lematization_of_terms_data = read_input_lines_files(lematization_of_terms_file)
+  
+  # Aplicar el dichero de lematización.
+
+  # Creación de la matriz de datos.
+
   
   # At this point starts the implementation of the content based model.
   

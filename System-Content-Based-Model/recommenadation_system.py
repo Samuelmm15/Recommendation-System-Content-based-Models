@@ -29,28 +29,30 @@ def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms
   plain_text_data = read_input_lines_files(plain_text_file)
   documents = []
   for line in plain_text_data:
-    path = "../Data/Documents/" + line.replace("\n", "")
+    path = "../Data/Documents/" + line
     documents.append(read_input_files(str(path)))
 
-  # Eliminación de la puntuación.
+  # Eliminación de la puntuación y mayusculas.
   translator = str.maketrans("", "", string.punctuation)
 
   for i in range(len(documents)):
     documents[i] = documents[i].translate(translator)
+    documents[i] = documents[i].casefold()
   
-  # Creación de lista de palabras por documento.
+  # Creación de una matriz de palabras (vector por documento).
+  for i in range(len(documents)):
+    documents[i] = documents[i].split(" ")
 
   # Eliminación de las palabras de parada.
+  for i in range(len(documents)):
+    documents[i] = [word for word in documents[i] if word not in stop_word_data]
 
-      
   # Comprobación del resultado
   for i in documents:
     print(i)
-  
-
-
+    
   # Lectura del dichero de lematización.
-  # lematization_of_terms_data = read_input_lines_files(lematization_of_terms_file)
+  lematization_of_terms_data = read_input_lines_files(lematization_of_terms_file)
   
   # Aplicar el dichero de lematización.
 

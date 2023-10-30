@@ -23,10 +23,10 @@ def read_input_lines_files(input_file):
       sys.exit(1) # Exit with error type 1.
     else:
       try:
-        with open(input_file, 'r') as file: # Open the file in read mode.
+        with open(input_file, 'r', encoding='utf-8-sig') as file: # Open the file in read mode.
           rows = []
           for line in file:
-            rows.append(line)
+            rows.append(line.replace("\n", ""))
           # print()
           # print("The content of the file is the following:")
           # for line in rows:
@@ -50,7 +50,7 @@ def read_input_files(input_file):
     else:
       try:
         
-        with open(input_file, 'r') as file: # Open the file in read mode.
+        with open(input_file, 'r', encoding='utf-8-sig') as file: # Open the file in read mode.
           string = ""
           for line in file:
             string += line.replace("\n", "")

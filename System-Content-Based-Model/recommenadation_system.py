@@ -29,6 +29,7 @@ def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms
   # Lectura de los ficheros de documentos que se encuentran dentro de el fichero plain_text_file.
   plain_text_data = read_input_lines_files(plain_text_file)
   documents = []
+  number_of_documents = len(plain_text_data)
   for line in plain_text_data:
     path = "../Data/Documents/" + line
     documents.append(read_input_files(str(path)))
@@ -69,5 +70,48 @@ def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms
   # Comprobación del resultado
   # print(documents)
   
-  # Creación de la matriz de datos.
+  # Creación de la matriz de datos y limpieza de palabras repetidas.
+  # Nótese que debe de existir una matriz por documento, es decir, un vector de matrices (matrices tridimensionales).
   
+  documents_matrix = []
+  
+  for i in range(len(documents)):
+    documents_matrix.append([])
+    for word in documents[i]:
+      if word not in documents_matrix[i]:
+        documents_matrix[i].append(word)
+
+  # Formato de las matrices (Indice - Palabra)
+  for i in range(len(documents_matrix)):
+    for j in range(len(documents_matrix[i])):
+        documents_matrix[i][j] = [j, documents_matrix[i][j]]
+      
+  # Comprobación del resultado
+  # print(documents)
+  
+  # Contador de aparición de la palabra por documento
+  for i in range(len(documents_matrix)):
+    for j in range(len(documents_matrix[i])):
+      documents_matrix[i][j].append(documents[i].count(documents_matrix[i][j][1]))
+      
+  # Comprobación del resultado
+  # print(documents_matrix)
+
+  # Cálculo de TF
+  for i in range(len(documents_matrix)):
+    for j in range(len(documents_matrix[i])):
+      documents_matrix[i][j].append(1 + np.log10(documents_matrix[i][j][2])) #TF
+      
+  # Cálculo de DF y IDF
+  for i in range(len(documents_matrix)):
+    for j in range(len(documents_matrix[i])):
+      documents_matrix[i][j].append(0) # DF
+      for k in range(len(documents_matrix)):
+        if documents_matrix[i][j][1] in documents[k]:
+          documents_matrix[i][j][4] += 1  
+      documents_matrix[i][j].append(np.log10(len(documents)/documents_matrix[i][j][4]))
+      
+  # Cálculo de TF-IDF
+  
+  # Comprobación del resultado: Indice - Palabra - Contador - TF - DF - IDF
+  print(documents_matrix)

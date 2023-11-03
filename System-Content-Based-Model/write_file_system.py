@@ -24,28 +24,35 @@ from prettytable import PrettyTable
 #
 def write_file_system(document_matrix,  document_file, sim_matrix):
   # Al hacer uso de distintos tipos de ficheros de entrada, se obtienen distintos ficheros de salida.
+  path = document_file
+  file_name =  os.path.basename(path) # Allows to obtain the file name, removing the path.
+  file_name = os.path.splitext(file_name)[0] # Allows to obtain the file name, removing the extension.
+  output_file_name = f"../Results/{str(file_name)}_output.txt"
+  
+  # Impresión de la interacción 0
+  with open(output_file_name, "w") as file:
+      string = "<< TABLE  " + "0" + " >>\n\n"
+      file.write(string)
+      
   for i in range(len(document_matrix)):
-    path = document_file
-    file_name =  os.path.basename(path) # Allows to obtain the file name, removing the path.
-    file_name = os.path.splitext(file_name)[0] # Allows to obtain the file name, removing the extension.
-    output_file_name = f"../Results/{str(file_name)}_{str(i)}_output.txt"
-
-    with open(output_file_name, "w") as file:
-      file.write("<< TABLE >>\n\n")
+    if i != 0:
+      with open(output_file_name, "a") as file:
+        string = "<< TABLE  " + str(i) + " >>\n\n"
+        file.write(string)
 
     # Creación de la tabla para mostrar los resultados y posteriormente se realiza su impresión en un documento externo.
     table = PrettyTable()
     table.field_names = ["Index", "Word", "Frequency", "TF", "DF", "IDF", "Length of vector"]
     
     output_document_matrix = document_matrix[i]
-    for i in output_document_matrix:
-      table.add_row([str(i[0])[:10], str(i[1])[:10], str(i[2])[:10], str(i[3])[:10], str(i[4])[:10], str(i[5])[:10], str(i[6])[:10]]) # Haciendo uso del :10 permite establecer el número máximo de caracteres por columna.
+    for j in output_document_matrix:
+      table.add_row([str(j[0])[:15], str(j[1])[:15], str(j[2])[:15], str(j[3])[:15], str(j[4])[:15], str(j[5])[:15], str(j[6])[:15]]) # Haciendo uso del :10 permite establecer el número máximo de caracteres por columna.
     
     # Ajuste del estilo y el ancho del relleno de la tabla
     # Establecer estilo de alineación para los encabezados
     # for field in table.field_names:
     #     table.padding_width = 10
-    table.padding_width = 10
+    table.padding_width = 5
     
     # Centrado del contenido de cada columna
     table.align["Index"] = "c"
@@ -57,11 +64,9 @@ def write_file_system(document_matrix,  document_file, sim_matrix):
     table.align["Length of vector"] = "c"
 
     sim_text = ""
-    print(sim_matrix)
     for j in range(len(sim_matrix[i])):
-      if i != j:
-        sim_text += "Similaridad entre documento " + str(i) +" y documento " + str(j) + " = " + str(sim_matrix[i][j]) + "\n"
-
+        if i != j:
+          sim_text += "Similaridad entre documento " + str(i) +" y documento " + str(j) + " = " + str(sim_matrix[i][j]) + "\n"
 
     # Impresión de la tabla en el documento externo.
     with open(output_file_name, "a") as file:

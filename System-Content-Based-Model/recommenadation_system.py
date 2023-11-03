@@ -14,25 +14,22 @@ import string
 from read_input_files import read_input_files
 from read_input_files import read_input_lines_files
 from read_input_files import read_lematization_of_terms_file
+from write_file_system import write_file_system
 
-def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms_file):
+def recommendation_system(document_file, stop_word_file, lematization_of_terms_file):
   print("Welcome to the recommendation system!")
   print()
   print("The introdiced data is the following:")
-  print("Input file: " + str(plain_text_file))
+  print("Input file: " + str(document_file))
   print("Stop Word file: " + str(stop_word_file))
   print("Lematization of terms file " + str(lematization_of_terms_file))
   
   # Lectura de las palabras de parada
   stop_word_data = read_input_lines_files(stop_word_file)
   
-  # Lectura de los ficheros de documentos que se encuentran dentro de el fichero plain_text_file.
-  plain_text_data = read_input_lines_files(plain_text_file)
-  documents = []
-  number_of_documents = len(plain_text_data)
-  for line in plain_text_data:
-    path = "../Data/Documents/" + line
-    documents.append(read_input_files(str(path)))
+  # Lectura de los ficheros de documentos que se encuentran dentro de el fichero document_file.
+  documents = read_input_lines_files(document_file)
+  number_of_documents = len(document_file)
 
   # Eliminación de la puntuación y mayusculas.
   translator = str.maketrans("", "", string.punctuation)
@@ -111,7 +108,44 @@ def recommendation_system(plain_text_file, stop_word_file, lematization_of_terms
           documents_matrix[i][j][4] += 1  
       documents_matrix[i][j].append(np.log10(len(documents)/documents_matrix[i][j][4]))
       
-  # Cálculo de TF-IDF
+  # Cálculo de la longitud del vector
+  for i in range(len(documents_matrix)):
+    lenght_of_vector = 0
+    for j in range(len(documents_matrix[i])):
+      lenght_of_vector += documents_matrix[i][j][3] ** 2
+    lenght_of_vector = np.sqrt(lenght_of_vector)
+    for j in range(len(documents_matrix[i])):
+      documents_matrix[i][j].append(documents_matrix[i][j][3] / lenght_of_vector)
   
-  # Comprobación del resultado: Indice - Palabra - Contador - TF - DF - IDF
-  print(documents_matrix)
+  # Comprobación del resultado: Indice - Palabra - Contador - TF - DF - IDF - Lenght of Vector
+  #print(documents_matrix)
+  
+
+  # Cálculo de la matriz de simiritud
+  article_similarity = []
+  for i in range(len(documents)):
+    for j in range(len(documents[i])):
+      if documents[i][j] not in article_similarity:
+        word = []
+        word.append(documents[i][j])
+        for x in range(len(documents)):
+          if documents[x].count(word[0])==0:
+             word.append(0)
+          else:
+            for y in range(len(documents_matrix[x])):
+              if documents_matrix[x][y][1] == word[0]:
+                word.append(documents_matrix[x][y][6])
+                break
+          if x == len(documents)-1:
+            article_similarity.append(word)
+
+  # print(article_similarity)
+  sim_matrix = [[0]*len(documents_matrix)]*len(documents_matrix)
+  for i in range(len(sim_matrix)):
+    for j in range(len(sim_matrix[i])):
+      for k in range(len(article_similarity)):
+        sim_matrix[i][j] += article_similarity[k][i+1]*article_similarity[k][j+1]
+      
+  # print(sim_matrix)
+  
+  write_file_system(documents_matrix, document_file, sim_matrix)

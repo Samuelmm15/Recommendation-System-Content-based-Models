@@ -93,11 +93,6 @@ def recommendation_system(document_file, stop_word_file, lematization_of_terms_f
       
   # Comprobación del resultado
   # print(documents_matrix)
-
-  # Cálculo de TF
-  for i in range(len(documents_matrix)):
-    for j in range(len(documents_matrix[i])):
-      documents_matrix[i][j].append(1 + np.log10(documents_matrix[i][j][2])) #TF
       
   # Cálculo de DF y IDF
   for i in range(len(documents_matrix)):
@@ -105,47 +100,57 @@ def recommendation_system(document_file, stop_word_file, lematization_of_terms_f
       documents_matrix[i][j].append(0) # DF
       for k in range(len(documents_matrix)):
         if documents_matrix[i][j][1] in documents[k]:
-          documents_matrix[i][j][4] += 1  
-      documents_matrix[i][j].append(np.log10(len(documents)/documents_matrix[i][j][4]))
-      
-  # Cálculo de la longitud del vector
+          documents_matrix[i][j][3] += 1  
+      documents_matrix[i][j].append(np.log10(len(documents)/documents_matrix[i][j][3]))
+
+  # Cálculo de TF
+  for i in range(len(documents_matrix)):
+    for j in range(len(documents_matrix[i])):
+      documents_matrix[i][j].append(1 + np.log10(documents_matrix[i][j][2])) #TF
+
+  # Cálculo de la longitud del vector (TF-IDF)
   for i in range(len(documents_matrix)):
     lenght_of_vector = 0
     for j in range(len(documents_matrix[i])):
-      lenght_of_vector += documents_matrix[i][j][3] ** 2
+      lenght_of_vector += documents_matrix[i][j][5] ** 2
     lenght_of_vector = np.sqrt(lenght_of_vector)
     for j in range(len(documents_matrix[i])):
-      documents_matrix[i][j].append(documents_matrix[i][j][3] / lenght_of_vector)
+      documents_matrix[i][j].append(lenght_of_vector)
+      documents_matrix[i][j].append(documents_matrix[i][j][5] / lenght_of_vector)
   
-  # Comprobación del resultado: Indice - Palabra - Contador - TF - DF - IDF - Lenght of Vector
+  # Comprobación del resultado: Indice - Palabra - Contador - TF - DF - IDF - Lenght of Vector - TF-IDF
   #print(documents_matrix)
-  
 
   # Cálculo de la matriz de simiritud
-  article_similarity = []
+  word_similarity = []
   for i in range(len(documents)):
     for j in range(len(documents[i])):
-      if documents[i][j] not in article_similarity:
-        word = []
-        word.append(documents[i][j])
-        for x in range(len(documents)):
-          if documents[x].count(word[0])==0:
-             word.append(0)
-          else:
-            for y in range(len(documents_matrix[x])):
-              if documents_matrix[x][y][1] == word[0]:
-                word.append(documents_matrix[x][y][6])
-                break
-          if x == len(documents)-1:
-            article_similarity.append(word)
+      if documents[i][j] not in word_similarity:
+        word_similarity.append(documents[i][j])
 
-  # print(article_similarity)
-  sim_matrix = [[0]*len(documents_matrix)]*len(documents_matrix)
-  for i in range(len(sim_matrix)):
-    for j in range(len(sim_matrix[i])):
-      for k in range(len(article_similarity)):
-        sim_matrix[i][j] += article_similarity[k][i+1]*article_similarity[k][j+1]
-      
-  # print(sim_matrix)
+  for i in range(len(word_similarity)):
+    word_values = []
+    word_values.append(word_similarity[i])
+    for j in range(len(documents)):
+      if documents[j].count(word_values[0])==0:
+        word_values.append(0.0)
+      else:
+        for k in range(len(documents_matrix[j])):
+          if documents_matrix[j][k][1] == word_values[0]:
+            word_values.append(documents_matrix[j][k][7])
+            break
+      if j == len(documents)-1:
+        word_similarity[i] = word_values
+
+  # for k in range(len(word_similarity)):
+  #   print(word_similarity[k])
+
+  sim_matrix = []
+  for i in range(len(documents)):
+    sim_matrix.append([])
+    for j in range(len(documents)):
+      sim_matrix[i].append(0.0)
+      for k in range(len(word_similarity)):
+        sim_matrix[i][j] += word_similarity[k][i+1]*word_similarity[k][j+1]
   
   write_file_system(documents_matrix, document_file, sim_matrix)

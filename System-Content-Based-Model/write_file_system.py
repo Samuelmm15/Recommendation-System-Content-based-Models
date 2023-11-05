@@ -42,11 +42,11 @@ def write_file_system(document_matrix,  document_file, sim_matrix):
 
     # Creación de la tabla para mostrar los resultados y posteriormente se realiza su impresión en un documento externo.
     table = PrettyTable()
-    table.field_names = ["Index", "Word", "Frequency", "TF", "DF", "IDF", "Length of vector"]
+    table.field_names = ["Index", "Word", "Count", "DF", "IDF", "TF", "Length of vector", "TF-IDF"]
     
     output_document_matrix = document_matrix[i]
     for j in output_document_matrix:
-      table.add_row([str(j[0])[:15], str(j[1])[:15], str(j[2])[:15], str(j[3])[:15], str(j[4])[:15], str(j[5])[:15], str(j[6])[:15]]) # Haciendo uso del :10 permite establecer el número máximo de caracteres por columna.
+      table.add_row([str(j[0])[:15], str(j[1])[:15], str(j[2])[:15], str(j[3])[:15], str(j[4])[:15], str(j[5])[:15], str(j[6])[:15], str(j[7])[:15]]) # Haciendo uso del :10 permite establecer el número máximo de caracteres por columna.
     
     # Ajuste del estilo y el ancho del relleno de la tabla
     # Establecer estilo de alineación para los encabezados
@@ -57,11 +57,12 @@ def write_file_system(document_matrix,  document_file, sim_matrix):
     # Centrado del contenido de cada columna
     table.align["Index"] = "c"
     table.align["Word"] = "c"
-    table.align["Frequency"] = "c"
-    table.align["TF"] = "c"
+    table.align["Count"] = "c"
     table.align["DF"] = "c"
     table.align["IDF"] = "c"
+    table.align["TF"] = "c"
     table.align["Length of vector"] = "c"
+    table.align["TF-IDF"] = "c"
 
     sim_text = ""
     for j in range(len(sim_matrix[i])):
@@ -74,4 +75,7 @@ def write_file_system(document_matrix,  document_file, sim_matrix):
       file.write("\n\n")
       file.write(sim_text)
       file.write("\n\n")
+  
+  print()
+  print("The results have been written in the file: " + output_file_name)
   sys.exit(0) # Exit with success.

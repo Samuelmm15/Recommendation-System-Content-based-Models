@@ -36,6 +36,12 @@ def read_input_lines_files(input_file):
         
       return rows
 
+##
+  # @brief Implements the function that obtains the different lines of the input file.
+  #
+  # @param input_file the input file.
+  # @return The different lines of the input file.
+#
 def read_input_files(input_file):
   # To start with, we check if the input file exists and if it is a file.
   if os.path.exists(input_file) and os.path.isfile(input_file):
@@ -49,9 +55,6 @@ def read_input_files(input_file):
           string = ""
           for line in file:
             string += line.replace("\n", "")
-          #print()
-          #print("The content of the all file is the following:")
-          #print(string)
       except FileNotFoundError:
         print(f"The file {input_file} doesn't exist.")
         sys.exit(1)
@@ -71,8 +74,6 @@ def read_lematization_of_terms_file(input_file):
     else:
       try:
         with open(input_file, 'r', encoding='utf-8-sig') as file: # Open the file in read mode.
-          # Tener en cuenta que el formato del fichero es el siguiente:
-          # "is":"be", ....
           string = ""
           for line in file:
             string += line.replace("\n", "")

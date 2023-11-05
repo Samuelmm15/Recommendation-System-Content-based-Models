@@ -1,0 +1,949 @@
+<< TABLE  0 >>
+
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |        Word       |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |      remember     |       1       |     3      |     0.8239087409443     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       1       |       cherry      |       1       |     1      |     1.3010299956639     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       2       |       fruit       |       1       |     10     |     0.3010299956639     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       3       |       place       |       1       |     1      |     1.3010299956639     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       4       |       light       |       1       |     1      |     1.3010299956639     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       5       |      tannins      |       1       |     4      |     0.6989700043360     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       6       |        give       |       1       |     3      |     0.8239087409443     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       7       |       bright      |       1       |     3      |     0.8239087409443     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       8       |        wine       |       1       |     11     |     0.2596373105057     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       9       |        open       |       1       |     3      |     0.8239087409443     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       10      |       juicy       |       1       |     3      |     0.8239087409443     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       11      |     character     |       1       |     2      |           1.0           |     1.0     |     3.4641016151377      |     0.2886751345948     |
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 0 y el documento 1 = 0.26490647141300877
+Similaridad coseno entre el documento 0 y el documento 2 = 0.0
+Similaridad coseno entre el documento 0 y el documento 3 = 0.0
+Similaridad coseno entre el documento 0 y el documento 4 = 0.06059914428504546
+Similaridad coseno entre el documento 0 y el documento 5 = 0.06154574548966637
+Similaridad coseno entre el documento 0 y el documento 6 = 0.0
+Similaridad coseno entre el documento 0 y el documento 7 = 0.19364916731037085
+Similaridad coseno entre el documento 0 y el documento 8 = 0.15430334996209194
+Similaridad coseno entre el documento 0 y el documento 9 = 0.2567496356820836
+Similaridad coseno entre el documento 0 y el documento 10 = 0.0
+Similaridad coseno entre el documento 0 y el documento 11 = 0.20588932605445082
+Similaridad coseno entre el documento 0 y el documento 12 = 0.2648423092922445
+Similaridad coseno entre el documento 0 y el documento 13 = 0.05389194113764006
+Similaridad coseno entre el documento 0 y el documento 14 = 0.0
+Similaridad coseno entre el documento 0 y el documento 15 = 0.11322770341445959
+Similaridad coseno entre el documento 0 y el documento 16 = 0.0
+Similaridad coseno entre el documento 0 y el documento 17 = 0.08333333333333336
+Similaridad coseno entre el documento 0 y el documento 18 = 0.09946530075493895
+Similaridad coseno entre el documento 0 y el documento 19 = 0.41312740972886675
+
+
+<< TABLE  1 >>
+
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |        Word        |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |       merlot       |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       1       |        nero        |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       2       |       davola       |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       3       |        form        |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       4       |        base        |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       5       |        easy        |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       6       |      remember      |       1       |     3      |     0.8239087409443     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       7       |        wine        |       1       |     11     |     0.2596373105057     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       8       |       repair       |       1       |     4      |     0.6989700043360     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       9       |     fettuccine     |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       10      |        meat        |       1       |     2      |           1.0           |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       11      |       sauce        |       1       |     2      |           1.0           |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       12      |        pork        |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       13      |       roast        |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       14      |      quality       |       1       |     2      |           1.0           |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       15      |       fruit        |       1       |     10     |     0.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       16      |       clean        |       1       |     3      |     0.8239087409443     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       17      |       bright       |       1       |     3      |     0.8239087409443     |     1.0     |     4.3588989435406      |     0.2294157338705     |
+|       18      |       sharp        |       1       |     1      |     1.3010299956639     |     1.0     |     4.3588989435406      |     0.2294157338705     |
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 1 y el documento 0 = 0.26490647141300877
+Similaridad coseno entre el documento 1 y el documento 2 = 0.0
+Similaridad coseno entre el documento 1 y el documento 3 = 0.0
+Similaridad coseno entre el documento 1 y el documento 4 = 0.048159316449597554
+Similaridad coseno entre el documento 1 y el documento 5 = 0.04891159880445184
+Similaridad coseno entre el documento 1 y el documento 6 = 0.0
+Similaridad coseno entre el documento 1 y el documento 7 = 0.2051956704170308
+Similaridad coseno entre el documento 1 y el documento 8 = 0.12262786789699316
+Similaridad coseno entre el documento 1 y el documento 9 = 0.20404392007534877
+Similaridad coseno entre el documento 1 y el documento 10 = 0.0
+Similaridad coseno entre el documento 1 y el documento 11 = 0.05454141486668701
+Similaridad coseno entre el documento 1 y el documento 12 = 0.21047532490644355
+Similaridad coseno entre el documento 1 y el documento 13 = 0.12848691567932813
+Similaridad coseno entre el documento 1 y el documento 14 = 0.0
+Similaridad coseno entre el documento 1 y el documento 15 = 0.04499212706658475
+Similaridad coseno entre el documento 1 y el documento 16 = 0.11128297681493143
+Similaridad coseno entre el documento 1 y el documento 17 = 0.06622661785325219
+Similaridad coseno entre el documento 1 y el documento 18 = 0.11857050832961047
+Similaridad coseno entre el documento 1 y el documento 19 = 0.06779124267622168
+
+
+<< TABLE  2 >>
+
++---------------+------------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |          Word          |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+------------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |      participate       |       1       |     2      |           1.0           |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       1       |         extend         |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       2       |        calanìca        |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       3       |         series         |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       4       |     grilloviognier     |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       5       |         blend          |       1       |     3      |     0.8239087409443     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       6       |          show          |       2       |     3      |     0.8239087409443     |     1.3010299956639     |     4.5489206466608      |     0.2860085054723     |
+|       7       |         aromas         |       1       |     5      |     0.6020599913279     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       8       |      honeysuckle       |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       9       |        jasmine         |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       10      |          back          |       1       |     2      |           1.0           |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       11      |         touch          |       1       |     4      |     0.6989700043360     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       12      |          cut           |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       13      |         grass          |       1       |     2      |           1.0           |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       14      |          wild          |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       15      |        envisage        |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       16      |         mouth          |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       17      |          ripe          |       1       |     4      |     0.6989700043360     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       18      |      yellowfruit       |       1       |     1      |     1.3010299956639     |           1.0           |     4.5489206466608      |     0.2198323685276     |
+|       19      |        flavors         |       1       |     8      |     0.3979400086720     |           1.0           |     4.5489206466608      |     0.2198323685276     |
++---------------+------------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 2 y el documento 0 = 0.0
+Similaridad coseno entre el documento 2 y el documento 1 = 0.0
+Similaridad coseno entre el documento 2 y el documento 3 = 0.0672277185907479
+Similaridad coseno entre el documento 2 y el documento 4 = 0.060039361250143385
+Similaridad coseno entre el documento 2 y el documento 5 = 0.0468684184482556
+Similaridad coseno entre el documento 2 y el documento 6 = 0.14863380927058445
+Similaridad coseno entre el documento 2 y el documento 7 = 0.09831202393654327
+Similaridad coseno entre el documento 2 y el documento 8 = 0.11750534365052424
+Similaridad coseno entre el documento 2 y el documento 9 = 0.04545897371202463
+Similaridad coseno entre el documento 2 y el documento 10 = 0.1760016134486193
+Similaridad coseno entre el documento 2 y el documento 11 = 0.10452612129698483
+Similaridad coseno entre el documento 2 y el documento 12 = 0.0672277185907479
+Similaridad coseno entre el documento 2 y el documento 13 = 0.04103988063077024
+Similaridad coseno entre el documento 2 y el documento 14 = 0.055493624715313675
+Similaridad coseno entre el documento 2 y el documento 15 = 0.04311267449392495
+Similaridad coseno entre el documento 2 y el documento 16 = 0.0
+Similaridad coseno entre el documento 2 y el documento 17 = 0.06346013857302951
+Similaridad coseno entre el documento 2 y el documento 18 = 0.03787249061469889
+Similaridad coseno entre el documento 2 y el documento 19 = 0.04992921351795206
+
+
+<< TABLE  3 >>
+
++---------------+-------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |        Word       |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+-------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |       rustic      |       1       |     1      |     1.3010299956639     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       1       |        dry        |       1       |     2      |           1.0           |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       2       |      flavors      |       1       |     8      |     0.3979400086720     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       3       |      berries      |       1       |     1      |     1.3010299956639     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       4       |      currants     |       1       |     1      |     1.3010299956639     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       5       |      licorice     |       1       |     1      |     1.3010299956639     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       6       |       spices      |       1       |     1      |     1.3010299956639     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       7       |      cabernet     |       2       |     2      |           1.0           |     1.3010299956639     |     3.2699662153633      |     0.3978726109007     |
+|       8       |       franc       |       1       |     1      |     1.3010299956639     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       9       |     sauvignon     |       1       |     4      |     0.6989700043360     |           1.0           |     3.2699662153633      |     0.3058135571253     |
++---------------+-------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 3 y el documento 0 = 0.0
+Similaridad coseno entre el documento 3 y el documento 1 = 0.0
+Similaridad coseno entre el documento 3 y el documento 2 = 0.0672277185907479
+Similaridad coseno entre el documento 3 y el documento 4 = 0.06419686925434143
+Similaridad coseno entre el documento 3 y el documento 5 = 0.0
+Similaridad coseno entre el documento 3 y el documento 6 = 0.05169192579163187
+Similaridad coseno entre el documento 3 y el documento 7 = 0.15734901065328133
+Similaridad coseno entre el documento 3 y el documento 8 = 0.0
+Similaridad coseno entre el documento 3 y el documento 9 = 0.0
+Similaridad coseno entre el documento 3 y el documento 10 = 0.0
+Similaridad coseno entre el documento 3 y el documento 11 = 0.07270427276117951
+Similaridad coseno entre el documento 3 y el documento 12 = 0.0
+Similaridad coseno entre el documento 3 y el documento 13 = 0.1712743937176116
+Similaridad coseno entre el documento 3 y el documento 14 = 0.07719838022775807
+Similaridad coseno entre el documento 3 y el documento 15 = 0.0
+Similaridad coseno entre el documento 3 y el documento 16 = 0.0
+Similaridad coseno entre el documento 3 y el documento 17 = 0.0882807697640815
+Similaridad coseno entre el documento 3 y el documento 18 = 0.05268523989277132
+Similaridad coseno entre el documento 3 y el documento 19 = 0.0
+
+
+<< TABLE  4 >>
+
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |         Word        |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |         show        |       1       |     3      |     0.8239087409443     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       1       |          be         |       2       |     14     |     0.1549019599857     |     1.3010299956639     |     4.7636833490081      |     0.2731142900031     |
+|       2       |        start        |       1       |     2      |           1.0           |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       3       |        green        |       1       |     2      |           1.0           |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       4       |      gooseberry     |       1       |     2      |           1.0           |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       5       |        flavor       |       1       |     5      |     0.6020599913279     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       6       |       similar       |       1       |     1      |     1.3010299956639     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       7       |       zealand       |       1       |     2      |           1.0           |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       8       |      sauvignon      |       1       |     4      |     0.6989700043360     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       9       |        blanc        |       1       |     3      |     0.8239087409443     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       10      |         note        |       1       |     7      |     0.4559319556497     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       11      |       include       |       1       |     1      |     1.3010299956639     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       12      |       tropical      |       1       |     2      |           1.0           |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       13      |        fruit        |       1       |     10     |     0.3010299956639     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       14      |        orange       |       1       |     2      |           1.0           |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       15      |        honey        |       1       |     3      |     0.8239087409443     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       16      |       unoaked       |       1       |     1      |     1.3010299956639     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       17      |        splash       |       1       |     1      |     1.3010299956639     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       18      |        muscat       |       1       |     1      |     1.3010299956639     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       19      |     commendable     |       1       |     1      |     1.3010299956639     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       20      |       dryness       |       1       |     1      |     1.3010299956639     |           1.0           |     4.7636833490081      |     0.2099215935937     |
+|       21      |       acidity       |       1       |     3      |     0.8239087409443     |           1.0           |     4.7636833490081      |     0.2099215935937     |
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 4 y el documento 0 = 0.06059914428504546
+Similaridad coseno entre el documento 4 y el documento 1 = 0.048159316449597554
+Similaridad coseno entre el documento 4 y el documento 2 = 0.060039361250143385
+Similaridad coseno entre el documento 4 y el documento 3 = 0.06419686925434143
+Similaridad coseno entre el documento 4 y el documento 5 = 0.1924944646737395
+Similaridad coseno entre el documento 4 y el documento 6 = 0.08164796644169349
+Similaridad coseno entre el documento 4 y el documento 7 = 0.10801010712943412
+Similaridad coseno entre el documento 4 y el documento 8 = 0.056103905808112024
+Similaridad coseno entre el documento 4 y el documento 9 = 0.16029746884143342
+Similaridad coseno entre el documento 4 y el documento 10 = 0.16806687485404456
+Similaridad coseno entre el documento 4 y el documento 11 = 0.1343831776406192
+Similaridad coseno entre el documento 4 y el documento 12 = 0.30125530340087664
+Similaridad coseno entre el documento 4 y el documento 13 = 0.3014735241506428
+Similaridad coseno entre el documento 4 y el documento 14 = 0.1426898757077475
+Similaridad coseno entre el documento 4 y el documento 15 = 0.08233802323532603
+Similaridad coseno entre el documento 4 y el documento 16 = 0.06623994503225786
+Similaridad coseno entre el documento 4 y el documento 17 = 0.26063873728155007
+Similaridad coseno entre el documento 4 y el documento 18 = 0.2782062968627386
+Similaridad coseno entre el documento 4 y el documento 19 = 0.08070395521516753
+
+
+<< TABLE  5 >>
+
++---------------+---------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |         Word        |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+---------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |        erath        |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       1       |         2010        |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       2       |       vineyard      |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       3       |      designates     |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       4       |       strongly      |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       5       |        herbal       |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       6       |         note        |       1       |     7      |     0.4559319556497     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       7       |         leaf        |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       8       |         herb        |       1       |     2      |           1.0           |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       9       |        create       |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       10      |        unripe       |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       11      |        flavor       |       1       |     5      |     0.6020599913279     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       12      |     impressions     |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       13      |          be         |       1       |     14     |     0.1549019599857     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       14      |        touch        |       1       |     4      |     0.6989700043360     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       15      |      bitterness     |       1       |     2      |           1.0           |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       16      |        finish       |       1       |     5      |     0.6020599913279     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       17      |        fruit        |       1       |     10     |     0.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       18      |         pass        |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       19      |       ripeness      |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       20      |        sweet        |       1       |     4      |     0.6989700043360     |     1.0     |     4.6904157598234      |     0.2132007163556     |
+|       21      |       tomatoes      |       1       |     1      |     1.3010299956639     |     1.0     |     4.6904157598234      |     0.2132007163556     |
++---------------+---------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 5 y el documento 0 = 0.06154574548966637
+Similaridad coseno entre el documento 5 y el documento 1 = 0.04891159880445184
+Similaridad coseno entre el documento 5 y el documento 2 = 0.0468684184482556
+Similaridad coseno entre el documento 5 y el documento 3 = 0.0
+Similaridad coseno entre el documento 5 y el documento 4 = 0.1924944646737395
+Similaridad coseno entre el documento 5 y el documento 6 = 0.14414999403128942
+Similaridad coseno entre el documento 5 y el documento 7 = 0.09534625892455922
+Similaridad coseno entre el documento 5 y el documento 8 = 0.05698028822981897
+Similaridad coseno entre el documento 5 y el documento 9 = 0.18962217278704885
+Similaridad coseno entre el documento 5 y el documento 10 = 0.15512630699850571
+Similaridad coseno entre el documento 5 y el documento 11 = 0.21800393426055337
+Similaridad coseno entre el documento 5 y el documento 12 = 0.21522606456309382
+Similaridad coseno entre el documento 5 y el documento 13 = 0.09158521925118165
+Similaridad coseno entre el documento 5 y el documento 14 = 0.23147952615488546
+Similaridad coseno entre el documento 5 y el documento 15 = 0.08362420100070908
+Similaridad coseno entre el documento 5 y el documento 16 = 0.05170876899950191
+Similaridad coseno entre el documento 5 y el documento 17 = 0.12309149097933274
+Similaridad coseno entre el documento 5 y el documento 18 = 0.12124682022641381
+Similaridad coseno entre el documento 5 y el documento 19 = 0.11142278916991283
+
+
+<< TABLE  6 >>
+
++---------------+-----------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |          Word         |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+-----------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |         white         |       1       |     3      |     0.8239087409443     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       1       |         flower        |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       2       |         lychee        |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       3       |         apple         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       4       |         aromas        |       1       |     5      |     0.6020599913279     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       5       |         carry         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       6       |         mellow        |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       7       |        bouquet        |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       8       |     chunkyfeeling     |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       9       |         palate        |       1       |     5      |     0.6020599913279     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       10      |          bear         |       1       |     2      |           1.0           |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       11      |        powdery        |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       12      |         sweet         |       1       |     4      |     0.6989700043360     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       13      |        flavors        |       1       |     8      |     0.3979400086720     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       14      |         peach         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       15      |         melon         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       16      |          mix          |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       17      |        greener        |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       18      |          note         |       1       |     7      |     0.4559319556497     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       19      |         grass         |       1       |     2      |           1.0           |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       20      |          lime         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       21      |           80          |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       22      |        viognier       |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       23      |       component       |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       24      |        typical        |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       25      |          warm         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       26      |        climate        |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       27      |         plump         |       1       |     2      |           1.0           |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       28      |          oily         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       29      |           be          |       1       |     14     |     0.1549019599857     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       30      |         short         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       31      |         finish        |       1       |     5      |     0.6020599913279     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       32      |       chardonnay      |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       33      |          fill         |       1       |     1      |     1.3010299956639     |     1.0     |     5.9160797830996      |     0.1690308509457     |
+|       34      |         blend         |       1       |     3      |     0.8239087409443     |     1.0     |     5.9160797830996      |     0.1690308509457     |
++---------------+-----------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 6 y el documento 0 = 0.0
+Similaridad coseno entre el documento 6 y el documento 1 = 0.0
+Similaridad coseno entre el documento 6 y el documento 2 = 0.14863380927058445
+Similaridad coseno entre el documento 6 y el documento 3 = 0.05169192579163187
+Similaridad coseno entre el documento 6 y el documento 4 = 0.08164796644169349
+Similaridad coseno entre el documento 6 y el documento 5 = 0.14414999403128942
+Similaridad coseno entre el documento 6 y el documento 7 = 0.11338934190276817
+Similaridad coseno entre el documento 6 y el documento 8 = 0.13552618543578768
+Similaridad coseno entre el documento 6 y el documento 9 = 0.11538342763863967
+Similaridad coseno entre el documento 6 y el documento 10 = 0.12298800925361816
+Similaridad coseno entre el documento 6 y el documento 11 = 0.13265348036033756
+Similaridad coseno entre el documento 6 y el documento 12 = 0.06725274598854965
+Similaridad coseno entre el documento 6 y el documento 13 = 0.07261104844626692
+Similaridad coseno entre el documento 6 y el documento 14 = 0.22619223571014196
+Similaridad coseno entre el documento 6 y el documento 15 = 0.0994490316197694
+Similaridad coseno entre el documento 6 y el documento 16 = 0.040996003084539386
+Similaridad coseno entre el documento 6 y el documento 17 = 0.19518001458970666
+Similaridad coseno entre el documento 6 y el documento 18 = 0.12524796454450488
+Similaridad coseno entre el documento 6 y el documento 19 = 0.08833876916585906
+
+
+<< TABLE  7 >>
+
++---------------+---------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |         Word        |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+---------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |     concentrate     |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       1       |       cabernet      |       1       |     2      |           1.0           |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       2       |        offer        |       1       |     2      |           1.0           |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       3       |        aromas       |       1       |     5      |     0.6020599913279     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       4       |        secure       |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       5       |         meat        |       1       |     2      |           1.0           |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       6       |        dried        |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       7       |        fruit        |       1       |     10     |     0.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       8       |       rosemary      |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       9       |       barbecue      |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       10      |        spice        |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       11      |       teriyaki      |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       12      |        sauce        |       1       |     2      |           1.0           |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       13      |       flavors       |       1       |     8      |     0.3979400086720     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       14      |         give        |       1       |     3      |     0.8239087409443     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       15      |         wine        |       1       |     11     |     0.2596373105057     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       16      |          be         |       1       |     14     |     0.1549019599857     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       17      |         bold        |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       18      |        chewy        |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
+|       19      |         feel        |       1       |     1      |     1.3010299956639     |     1.0     |     4.4721359549995      |     0.2236067977499     |
++---------------+---------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 7 y el documento 0 = 0.19364916731037085
+Similaridad coseno entre el documento 7 y el documento 1 = 0.2051956704170308
+Similaridad coseno entre el documento 7 y el documento 2 = 0.09831202393654327
+Similaridad coseno entre el documento 7 y el documento 3 = 0.15734901065328133
+Similaridad coseno entre el documento 7 y el documento 4 = 0.10801010712943412
+Similaridad coseno entre el documento 7 y el documento 5 = 0.09534625892455922
+Similaridad coseno entre el documento 7 y el documento 6 = 0.11338934190276817
+Similaridad coseno entre el documento 7 y el documento 8 = 0.17928429140015906
+Similaridad coseno entre el documento 7 y el documento 9 = 0.1665573994902245
+Similaridad coseno entre el documento 7 y el documento 10 = 0.05423261445466404
+Similaridad coseno entre el documento 7 y el documento 11 = 0.175484059790322
+Similaridad coseno entre el documento 7 y el documento 12 = 0.22573100087061312
+Similaridad coseno entre el documento 7 y el documento 13 = 0.13779990641641668
+Similaridad coseno entre el documento 7 y el documento 14 = 0.1298849214216946
+Similaridad coseno entre el documento 7 y el documento 15 = 0.043852900965351466
+Similaridad coseno entre el documento 7 y el documento 16 = 0.10846522890932808
+Similaridad coseno entre el documento 7 y el documento 17 = 0.19364916731037085
+Similaridad coseno entre el documento 7 y el documento 18 = 0.16568748320089757
+Similaridad coseno entre el documento 7 y el documento 19 = 0.1829359372436189
+
+
+<< TABLE  8 >>
+
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |        Word        |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |        inky        |       1       |     1      |     1.3010299956639     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       1       |       color        |       1       |     1      |     1.3010299956639     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       2       |        wine        |       1       |     11     |     0.2596373105057     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       3       |       plump        |       1       |     2      |           1.0           |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       4       |       aromas       |       1       |     5      |     0.6020599913279     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       5       |        ripe        |       1       |     4      |     0.6989700043360     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       6       |       fruit        |       1       |     10     |     0.3010299956639     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       7       |     blackberry     |       1       |     1      |     1.3010299956639     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       8       |        jam         |       1       |     1      |     1.3010299956639     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       9       |        rum         |       1       |     1      |     1.3010299956639     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       10      |        cake        |       1       |     1      |     1.3010299956639     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       11      |       palate       |       1       |     5      |     0.6020599913279     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       12      |       soften       |       1       |     3      |     0.8239087409443     |     1.0     |     3.7416573867739      |     0.2672612419124     |
+|       13      |       smooth       |       1       |     1      |     1.3010299956639     |     1.0     |     3.7416573867739      |     0.2672612419124     |
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 8 y el documento 0 = 0.15430334996209194
+Similaridad coseno entre el documento 8 y el documento 1 = 0.12262786789699316
+Similaridad coseno entre el documento 8 y el documento 2 = 0.11750534365052424
+Similaridad coseno entre el documento 8 y el documento 3 = 0.0
+Similaridad coseno entre el documento 8 y el documento 4 = 0.056103905808112024
+Similaridad coseno entre el documento 8 y el documento 5 = 0.05698028822981897
+Similaridad coseno entre el documento 8 y el documento 6 = 0.13552618543578768
+Similaridad coseno entre el documento 8 y el documento 7 = 0.17928429140015906
+Similaridad coseno entre el documento 8 y el documento 9 = 0.1824372177876625
+Similaridad coseno entre el documento 8 y el documento 10 = 0.0
+Similaridad coseno entre el documento 8 y el documento 11 = 0.06353882546327834
+Similaridad coseno entre el documento 8 y el documento 12 = 0.3269284442839183
+Similaridad coseno entre el documento 8 y el documento 13 = 0.04989424232098638
+Similaridad coseno entre el documento 8 y el documento 14 = 0.06746638431350072
+Similaridad coseno entre el documento 8 y el documento 15 = 0.05241424183609592
+Similaridad coseno entre el documento 8 y el documento 16 = 0.0
+Similaridad coseno entre el documento 8 y el documento 17 = 0.07715167498104597
+Similaridad coseno entre el documento 8 y el documento 18 = 0.18417394933768882
+Similaridad coseno entre el documento 8 y el documento 19 = 0.20037730852097654
+
+
+<< TABLE  9 >>
+
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |         Word        |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |     participate     |       1       |     2      |           1.0           |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       1       |       natural       |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       2       |         wine        |       2       |     11     |     0.2596373105057     |     1.3010299956639     |     4.8358409919304      |     0.2690390353684     |
+|       3       |       movement      |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       4       |       organic       |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       5       |        grapes       |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       6       |        label        |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       7       |        print        |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       8       |      vegetable      |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       9       |        think        |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       10      |       recycled      |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       11      |        paper        |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       12      |       quality       |       1       |     2      |           1.0           |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       13      |        fruit        |       1       |     10     |     0.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       14      |         nice        |       1       |     1      |     1.3010299956639     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       15      |          be         |       2       |     14     |     0.1549019599857     |     1.3010299956639     |     4.8358409919304      |     0.2690390353684     |
+|       16      |        juicy        |       1       |     3      |     0.8239087409443     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       17      |        palate       |       1       |     5      |     0.6020599913279     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       18      |        bright       |       1       |     3      |     0.8239087409443     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       19      |        berry        |       1       |     4      |     0.6989700043360     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       20      |        flavor       |       1       |     5      |     0.6020599913279     |           1.0           |     4.8358409919304      |     0.2067892640946     |
+|       21      |        finish       |       1       |     5      |     0.6020599913279     |           1.0           |     4.8358409919304      |     0.2067892640946     |
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 9 y el documento 0 = 0.2567496356820836
+Similaridad coseno entre el documento 9 y el documento 1 = 0.20404392007534877
+Similaridad coseno entre el documento 9 y el documento 2 = 0.04545897371202463
+Similaridad coseno entre el documento 9 y el documento 3 = 0.0
+Similaridad coseno entre el documento 9 y el documento 4 = 0.16029746884143342
+Similaridad coseno entre el documento 9 y el documento 5 = 0.18962217278704885
+Similaridad coseno entre el documento 9 y el documento 6 = 0.11538342763863967
+Similaridad coseno entre el documento 9 y el documento 7 = 0.1665573994902245
+Similaridad coseno entre el documento 9 y el documento 8 = 0.1824372177876625
+Similaridad coseno entre el documento 9 y el documento 10 = 0.06525155060224937
+Similaridad coseno entre el documento 9 y el documento 11 = 0.19633946801231816
+Similaridad coseno entre el documento 9 y el documento 12 = 0.3790359291322017
+Similaridad coseno entre el documento 9 y el documento 13 = 0.10395060679476803
+Similaridad coseno entre el documento 9 y el documento 14 = 0.2449628880289609
+Similaridad coseno entre el documento 9 y el documento 15 = 0.09331760708006817
+Similaridad coseno entre el documento 9 y el documento 16 = 0.06525155060224937
+Similaridad coseno entre el documento 9 y el documento 17 = 0.1553297594924687
+Similaridad coseno entre el documento 9 y el documento 18 = 0.21352851129873934
+Similaridad coseno entre el documento 9 y el documento 19 = 0.20596628533084343
+
+
+<< TABLE  10 >>
+
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |        Word        |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |     catarratto     |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       1       |      sicilys       |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       2       |       widely       |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       3       |       farmed       |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       4       |       white        |       1       |     3      |     0.8239087409443     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       5       |       grape        |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       6       |     varieties      |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       7       |     expression     |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       8       |        show        |       1       |     3      |     0.8239087409443     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       9       |         be         |       1       |     14     |     0.1549019599857     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       10      |      mineral       |       1       |     2      |           1.0           |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       11      |        note        |       1       |     7      |     0.4559319556497     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       12      |        back        |       1       |     2      |           1.0           |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       13      |       citrus       |       1       |     3      |     0.8239087409443     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       14      |       almond       |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       15      |      blossom       |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       16      |       touch        |       1       |     4      |     0.6989700043360     |     1.0     |     4.1231056256176      |     0.2425356250363     |
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 10 y el documento 0 = 0.0
+Similaridad coseno entre el documento 10 y el documento 1 = 0.0
+Similaridad coseno entre el documento 10 y el documento 2 = 0.1760016134486193
+Similaridad coseno entre el documento 10 y el documento 3 = 0.0
+Similaridad coseno entre el documento 10 y el documento 4 = 0.16806687485404456
+Similaridad coseno entre el documento 10 y el documento 5 = 0.15512630699850571
+Similaridad coseno entre el documento 10 y el documento 6 = 0.12298800925361816
+Similaridad coseno entre el documento 10 y el documento 7 = 0.05423261445466404
+Similaridad coseno entre el documento 10 y el documento 8 = 0.0
+Similaridad coseno entre el documento 10 y el documento 9 = 0.06525155060224937
+Similaridad coseno entre el documento 10 y el documento 11 = 0.19033918715095494
+Similaridad coseno entre el documento 10 y el documento 12 = 0.09649828236966139
+Similaridad coseno entre el documento 10 y el documento 13 = 0.10418669681261794
+Similaridad coseno entre el documento 10 y el documento 14 = 0.14087997733874197
+Similaridad coseno entre el documento 10 y el documento 15 = 0.04756514941544941
+Similaridad coseno entre el documento 10 y el documento 16 = 0.1764705882352941
+Similaridad coseno entre el documento 10 y el documento 17 = 0.140028008402801
+Similaridad coseno entre el documento 10 y el documento 18 = 0.05436195619886061
+Similaridad coseno entre el documento 10 y el documento 19 = 0.071668107226437
+
+
+<< TABLE  11 >>
+
++---------------+--------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |        Word        |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+--------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |         be         |       2       |     14     |     0.1549019599857     |     1.3010299956639     |     4.2062666403376      |     0.3093075420343     |
+|       1       |       stiff        |       1       |     1      |     1.3010299956639     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       2       |       tannic       |       1       |     1      |     1.3010299956639     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       3       |        wine        |       1       |     11     |     0.2596373105057     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       4       |       slowly       |       1       |     1      |     1.3010299956639     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       5       |        open        |       1       |     3      |     0.8239087409443     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       6       |       bring        |       1       |     1      |     1.3010299956639     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       7       |      brambly       |       1       |     1      |     1.3010299956639     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       8       |       berry        |       1       |     4      |     0.6989700043360     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       9       |      flavors       |       1       |     8      |     0.3979400086720     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       10      |        play        |       1       |     1      |     1.3010299956639     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       11      |        note        |       1       |     7      |     0.4559319556497     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       12      |       earthy       |       1       |     1      |     1.3010299956639     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       13      |       herbs        |       1       |     1      |     1.3010299956639     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       14      |       touch        |       1       |     4      |     0.6989700043360     |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       15      |     bitterness     |       1       |     2      |           1.0           |           1.0           |     4.2062666403376      |     0.2377405156416     |
+|       16      |      tannins       |       1       |     4      |     0.6989700043360     |           1.0           |     4.2062666403376      |     0.2377405156416     |
++---------------+--------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 11 y el documento 0 = 0.20588932605445082
+Similaridad coseno entre el documento 11 y el documento 1 = 0.05454141486668701
+Similaridad coseno entre el documento 11 y el documento 2 = 0.10452612129698483
+Similaridad coseno entre el documento 11 y el documento 3 = 0.07270427276117951
+Similaridad coseno entre el documento 11 y el documento 4 = 0.1343831776406192
+Similaridad coseno entre el documento 11 y el documento 5 = 0.21800393426055337
+Similaridad coseno entre el documento 11 y el documento 6 = 0.13265348036033756
+Similaridad coseno entre el documento 11 y el documento 7 = 0.175484059790322
+Similaridad coseno entre el documento 11 y el documento 8 = 0.06353882546327834
+Similaridad coseno entre el documento 11 y el documento 9 = 0.19633946801231816
+Similaridad coseno entre el documento 11 y el documento 10 = 0.19033918715095494
+Similaridad coseno entre el documento 11 y el documento 12 = 0.26847354484287794
+Similaridad coseno entre el documento 11 y el documento 13 = 0.11950944827259688
+Similaridad coseno entre el documento 11 y el documento 14 = 0.28162778937310173
+Similaridad coseno entre el documento 11 y el documento 15 = 0.13987425328017794
+Similaridad coseno entre el documento 11 y el documento 16 = 0.07501809803575626
+Similaridad coseno entre el documento 11 y el documento 17 = 0.22654894703092796
+Similaridad coseno entre el documento 11 y el documento 18 = 0.1102859069886827
+Similaridad coseno entre el documento 11 y el documento 19 = 0.2696432302579703
+
+
+<< TABLE  12 >>
+
++---------------+------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |       Word       |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |        be        |       2       |     14     |     0.1549019599857     |     1.3010299956639     |     3.2699662153633      |     0.3978726109007     |
+|       1       |     festive      |       1       |     1      |     1.3010299956639     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       2       |       wine       |       1       |     11     |     0.2596373105057     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       3       |      soften      |       1       |     3      |     0.8239087409443     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       4       |       ripe       |       1       |     4      |     0.6989700043360     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       5       |      fruit       |       1       |     10     |     0.3010299956639     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       6       |     acidity      |       1       |     3      |     0.8239087409443     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       7       |     remember     |       1       |     3      |     0.8239087409443     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       8       |      berry       |       1       |     4      |     0.6989700043360     |           1.0           |     3.2699662153633      |     0.3058135571253     |
+|       9       |      flavor      |       1       |     5      |     0.6020599913279     |           1.0           |     3.2699662153633      |     0.3058135571253     |
++---------------+------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 12 y el documento 0 = 0.2648423092922445
+Similaridad coseno entre el documento 12 y el documento 1 = 0.21047532490644355
+Similaridad coseno entre el documento 12 y el documento 2 = 0.0672277185907479
+Similaridad coseno entre el documento 12 y el documento 3 = 0.0
+Similaridad coseno entre el documento 12 y el documento 4 = 0.30125530340087664
+Similaridad coseno entre el documento 12 y el documento 5 = 0.21522606456309382
+Similaridad coseno entre el documento 12 y el documento 6 = 0.06725274598854965
+Similaridad coseno entre el documento 12 y el documento 7 = 0.22573100087061312
+Similaridad coseno entre el documento 12 y el documento 8 = 0.3269284442839183
+Similaridad coseno entre el documento 12 y el documento 9 = 0.3790359291322017
+Similaridad coseno entre el documento 12 y el documento 10 = 0.09649828236966139
+Similaridad coseno entre el documento 12 y el documento 11 = 0.26847354484287794
+Similaridad coseno entre el documento 12 y el documento 13 = 0.153728990566446
+Similaridad coseno entre el documento 12 y el documento 14 = 0.20787046110368376
+Similaridad coseno entre el documento 12 y el documento 15 = 0.059974972896285665
+Similaridad coseno entre el documento 12 y el documento 16 = 0.09649828236966139
+Similaridad coseno entre el documento 12 y el documento 17 = 0.29141746903153887
+Similaridad coseno entre el documento 12 y el documento 18 = 0.24723492146887582
+Similaridad coseno entre el documento 12 y el documento 19 = 0.3468510833225756
+
+
+<< TABLE  13 >>
+
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |         Word        |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |        clean        |       1       |     3      |     0.8239087409443     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       1       |        brisk        |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       2       |      mouthfeel      |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       3       |       slightly      |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       4       |        oaked        |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       5       |      sauvignon      |       1       |     4      |     0.6989700043360     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       6       |        blanc        |       1       |     3      |     0.8239087409443     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       7       |       instant       |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       8       |     likeability     |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       9       |         dry         |       1       |     2      |           1.0           |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       10      |          be         |       2       |     14     |     0.1549019599857     |     1.3010299956639     |     5.3565547742571      |     0.2428855954048     |
+|       11      |         rich        |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       12      |        streak       |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       13      |        honey        |       1       |     3      |     0.8239087409443     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       14      |       sweetens      |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       15      |        citrus       |       1       |     3      |     0.8239087409443     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       16      |        appear       |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       17      |       tropical      |       1       |     2      |           1.0           |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       18      |        fruit        |       1       |     10     |     0.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       19      |       flavors       |       1       |     8      |     0.3979400086720     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       20      |        repair       |       1       |     4      |     0.6989700043360     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       21      |        asian        |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       22      |         fare        |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       23      |         ham         |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       24      |        green        |       1       |     2      |           1.0           |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       25      |        salad        |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       26      |      grapefruit     |       1       |     2      |           1.0           |           1.0           |     5.3565547742571      |     0.1866871603378     |
+|       27      |       sections      |       1       |     1      |     1.3010299956639     |           1.0           |     5.3565547742571      |     0.1866871603378     |
++---------------+---------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 13 y el documento 0 = 0.05389194113764006
+Similaridad coseno entre el documento 13 y el documento 1 = 0.12848691567932813
+Similaridad coseno entre el documento 13 y el documento 2 = 0.04103988063077024
+Similaridad coseno entre el documento 13 y el documento 3 = 0.1712743937176116
+Similaridad coseno entre el documento 13 y el documento 4 = 0.3014735241506428
+Similaridad coseno entre el documento 13 y el documento 5 = 0.09158521925118165
+Similaridad coseno entre el documento 13 y el documento 6 = 0.07261104844626692
+Similaridad coseno entre el documento 13 y el documento 7 = 0.13779990641641668
+Similaridad coseno entre el documento 13 y el documento 8 = 0.04989424232098638
+Similaridad coseno entre el documento 13 y el documento 9 = 0.10395060679476803
+Similaridad coseno entre el documento 13 y el documento 10 = 0.10418669681261794
+Similaridad coseno entre el documento 13 y el documento 11 = 0.11950944827259688
+Similaridad coseno entre el documento 13 y el documento 12 = 0.153728990566446
+Similaridad coseno entre el documento 13 y el documento 14 = 0.12689674868027445
+Similaridad coseno entre el documento 13 y el documento 15 = 0.0
+Similaridad coseno entre el documento 13 y el documento 16 = 0.1947432710501945
+Similaridad coseno entre el documento 13 y el documento 17 = 0.1778989142199075
+Similaridad coseno entre el documento 13 y el documento 18 = 0.21525174259353352
+Similaridad coseno entre el documento 13 y el documento 19 = 0.07177152178209648
+
+
+<< TABLE  14 >>
+
++---------------+-------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |        Word       |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+-------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |         be        |       2       |     14     |     0.1549019599857     |     1.3010299956639     |     3.9613986229130      |     0.3284269318767     |
+|       1       |       berry       |       1       |     4      |     0.6989700043360     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       2       |       aroma       |       1       |     1      |     1.3010299956639     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       3       |        cola       |       1       |     1      |     1.3010299956639     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       4       |        herb       |       1       |     2      |           1.0           |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       5       |        note       |       1       |     7      |     0.4559319556497     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       6       |       palate      |       1       |     5      |     0.6020599913279     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       7       |       tangy       |       1       |     1      |     1.3010299956639     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       8       |        racy       |       1       |     1      |     1.3010299956639     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       9       |      deliver      |       1       |     1      |     1.3010299956639     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       10      |     raspberry     |       1       |     1      |     1.3010299956639     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       11      |        plum       |       1       |     1      |     1.3010299956639     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       12      |      flavors      |       1       |     8      |     0.3979400086720     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       13      |       modest      |       1       |     1      |     1.3010299956639     |           1.0           |     3.9613986229130      |     0.2524360952255     |
+|       14      |       finish      |       1       |     5      |     0.6020599913279     |           1.0           |     3.9613986229130      |     0.2524360952255     |
++---------------+-------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 14 y el documento 0 = 0.0
+Similaridad coseno entre el documento 14 y el documento 1 = 0.0
+Similaridad coseno entre el documento 14 y el documento 2 = 0.055493624715313675
+Similaridad coseno entre el documento 14 y el documento 3 = 0.07719838022775807
+Similaridad coseno entre el documento 14 y el documento 4 = 0.1426898757077475
+Similaridad coseno entre el documento 14 y el documento 5 = 0.23147952615488546
+Similaridad coseno entre el documento 14 y el documento 6 = 0.22619223571014196
+Similaridad coseno entre el documento 14 y el documento 7 = 0.1298849214216946
+Similaridad coseno entre el documento 14 y el documento 8 = 0.06746638431350072
+Similaridad coseno entre el documento 14 y el documento 9 = 0.2449628880289609
+Similaridad coseno entre el documento 14 y el documento 10 = 0.14087997733874197
+Similaridad coseno entre el documento 14 y el documento 11 = 0.28162778937310173
+Similaridad coseno entre el documento 14 y el documento 12 = 0.20787046110368376
+Similaridad coseno entre el documento 14 y el documento 13 = 0.12689674868027445
+Similaridad coseno entre el documento 14 y el documento 15 = 0.0990135827300148
+Similaridad coseno entre el documento 14 y el documento 16 = 0.07965523120148446
+Similaridad coseno entre el documento 14 y el documento 17 = 0.16768071252989408
+Similaridad coseno entre el documento 14 y el documento 18 = 0.11710306778587967
+Similaridad coseno entre el documento 14 y el documento 19 = 0.09704857406520852
+
+
+<< TABLE  15 >>
+
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |        Word       |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |       start       |       1       |     2      |           1.0           |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       1       |       block       |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       2       |        oaky       |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       3       |        wine       |       1       |     11     |     0.2596373105057     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       4       |      dripping     |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       5       |      caramel      |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       6       |      vanilla      |       1       |     2      |           1.0           |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       7       |        note       |       1       |     7      |     0.4559319556497     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       8       |      texture      |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       9       |     midpalate     |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       10      |      finessed     |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       11      |      graceful     |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       12      |       drying      |       1       |     2      |           1.0           |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       13      |      tannins      |       1       |     4      |     0.6989700043360     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       14      |       latch       |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       15      |     oakdriven     |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       16      |       finish      |       1       |     5      |     0.6020599913279     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       17      |     eccentric     |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       18      |       blend       |       1       |     3      |     0.8239087409443     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       19      |         50        |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       20      |       tannat      |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       21      |         35        |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       22      |       petit       |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       23      |       verdot      |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       24      |         15        |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
+|       25      |      pinotage     |       1       |     1      |     1.3010299956639     |     1.0     |     5.0990195135927      |     0.1961161351381     |
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 15 y el documento 0 = 0.11322770341445959
+Similaridad coseno entre el documento 15 y el documento 1 = 0.04499212706658475
+Similaridad coseno entre el documento 15 y el documento 2 = 0.04311267449392495
+Similaridad coseno entre el documento 15 y el documento 3 = 0.0
+Similaridad coseno entre el documento 15 y el documento 4 = 0.08233802323532603
+Similaridad coseno entre el documento 15 y el documento 5 = 0.08362420100070908
+Similaridad coseno entre el documento 15 y el documento 6 = 0.0994490316197694
+Similaridad coseno entre el documento 15 y el documento 7 = 0.043852900965351466
+Similaridad coseno entre el documento 15 y el documento 8 = 0.05241424183609592
+Similaridad coseno entre el documento 15 y el documento 9 = 0.09331760708006817
+Similaridad coseno entre el documento 15 y el documento 10 = 0.04756514941544941
+Similaridad coseno entre el documento 15 y el documento 11 = 0.13987425328017794
+Similaridad coseno entre el documento 15 y el documento 12 = 0.059974972896285665
+Similaridad coseno entre el documento 15 y el documento 13 = 0.0
+Similaridad coseno entre el documento 15 y el documento 14 = 0.0990135827300148
+Similaridad coseno entre el documento 15 y el documento 16 = 0.04756514941544941
+Similaridad coseno entre el documento 15 y el documento 17 = 0.11322770341445959
+Similaridad coseno entre el documento 15 y el documento 18 = 0.03378668272173075
+Similaridad coseno entre el documento 15 y el documento 19 = 0.10249405889364864
+
+
+<< TABLE  16 >>
+
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |        Word       |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |       spicy       |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       1       |       fresh       |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       2       |       clean       |       1       |     3      |     0.8239087409443     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       3       |       repair      |       1       |     4      |     0.6989700043360     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       4       |        fry        |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       5       |      seafood      |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       6       |     spaghetti     |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       7       |      continue     |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       8       |      vongole      |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       9       |       offer       |       1       |     2      |           1.0           |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       10      |       pretty      |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       11      |       citrus      |       1       |     3      |     0.8239087409443     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       12      |       tones       |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       13      |         be        |       1       |     14     |     0.1549019599857     |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       14      |       drying      |       1       |     2      |           1.0           |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       15      |      mineral      |       1       |     2      |           1.0           |     1.0     |     4.1231056256176      |     0.2425356250363     |
+|       16      |       nuance      |       1       |     1      |     1.3010299956639     |     1.0     |     4.1231056256176      |     0.2425356250363     |
++---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 16 y el documento 0 = 0.0
+Similaridad coseno entre el documento 16 y el documento 1 = 0.11128297681493143
+Similaridad coseno entre el documento 16 y el documento 2 = 0.0
+Similaridad coseno entre el documento 16 y el documento 3 = 0.0
+Similaridad coseno entre el documento 16 y el documento 4 = 0.06623994503225786
+Similaridad coseno entre el documento 16 y el documento 5 = 0.05170876899950191
+Similaridad coseno entre el documento 16 y el documento 6 = 0.040996003084539386
+Similaridad coseno entre el documento 16 y el documento 7 = 0.10846522890932808
+Similaridad coseno entre el documento 16 y el documento 8 = 0.0
+Similaridad coseno entre el documento 16 y el documento 9 = 0.06525155060224937
+Similaridad coseno entre el documento 16 y el documento 10 = 0.1764705882352941
+Similaridad coseno entre el documento 16 y el documento 11 = 0.07501809803575626
+Similaridad coseno entre el documento 16 y el documento 12 = 0.09649828236966139
+Similaridad coseno entre el documento 16 y el documento 13 = 0.1947432710501945
+Similaridad coseno entre el documento 16 y el documento 14 = 0.07965523120148446
+Similaridad coseno entre el documento 16 y el documento 15 = 0.04756514941544941
+Similaridad coseno entre el documento 16 y el documento 17 = 0.0700140042014005
+Similaridad coseno entre el documento 16 y el documento 18 = 0.09614574010855975
+Similaridad coseno entre el documento 16 y el documento 19 = 0.071668107226437
+
+
+<< TABLE  17 >>
+
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|     Index     |        Word        |     Count     |     DF     |           IDF           |      TF     |     Length of vector     |          TF-IDF         |
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+|       0       |         be         |       1       |     14     |     0.1549019599857     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       1       |       sweet        |       1       |     4      |     0.6989700043360     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       2       |        wine        |       1       |     11     |     0.2596373105057     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       3       |      flavors       |       1       |     8      |     0.3979400086720     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       4       |       white        |       1       |     3      |     0.8239087409443     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       5       |       sugar        |       1       |     1      |     1.3010299956639     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       6       |       orange       |       1       |     2      |           1.0           |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       7       |       honey        |       1       |     3      |     0.8239087409443     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       8       |      vanilla       |       1       |     2      |           1.0           |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       9       |     brightened     |       1       |     1      |     1.3010299956639     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       10      |       crisp        |       1       |     1      |     1.3010299956639     |     1.0     |     3.4641016151377      |     0.2886751345948     |
+|       11      |      acidity       |       1       |     3      |     0.8239087409443     |     1.0     |     3.4641016151377      |     0.2886751345948     |
++---------------+--------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 17 y el documento 0 = 0.08333333333333336
+Similaridad coseno entre el documento 17 y el documento 1 = 0.06622661785325219
+Similaridad coseno entre el documento 17 y el documento 2 = 0.06346013857302951
+Similaridad coseno entre el documento 17 y el documento 3 = 0.0882807697640815
+Similaridad coseno entre el documento 17 y el documento 4 = 0.26063873728155007
+Similaridad coseno entre el documento 17 y el documento 5 = 0.12309149097933274
+Similaridad coseno entre el documento 17 y el documento 6 = 0.19518001458970666
+Similaridad coseno entre el documento 17 y el documento 7 = 0.19364916731037085
+Similaridad coseno entre el documento 17 y el documento 8 = 0.07715167498104597
+Similaridad coseno entre el documento 17 y el documento 9 = 0.1553297594924687
+Similaridad coseno entre el documento 17 y el documento 10 = 0.140028008402801
+Similaridad coseno entre el documento 17 y el documento 11 = 0.22654894703092796
+Similaridad coseno entre el documento 17 y el documento 12 = 0.29141746903153887
+Similaridad coseno entre el documento 17 y el documento 13 = 0.1778989142199075
+Similaridad coseno entre el documento 17 y el documento 14 = 0.16768071252989408
+Similaridad coseno entre el documento 17 y el documento 15 = 0.11322770341445959
+Similaridad coseno entre el documento 17 y el documento 16 = 0.0700140042014005
+Similaridad coseno entre el documento 17 y el documento 18 = 0.11443632028242688
+Similaridad coseno entre el documento 17 y el documento 19 = 0.2361692794557937
+
+
+<< TABLE  18 >>
+
++---------------+-----------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |          Word         |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+-----------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |        bottling       |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       1       |        resemble       |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       2       |        zealand        |       1       |     2      |           1.0           |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       3       |        paradigm       |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       4       |       sauvignon       |       1       |     4      |     0.6989700043360     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       5       |         blanc         |       1       |     3      |     0.8239087409443     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       6       |          bear         |       1       |     2      |           1.0           |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       7       |         aromas        |       1       |     5      |     0.6020599913279     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       8       |       grapefruit      |       1       |     2      |           1.0           |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       9       |        passion        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       10      |         fruit         |       1       |     10     |     0.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       11      |          kiwi         |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       12      |           be          |       2       |     14     |     0.1549019599857     |     1.3010299956639     |     5.8045395208937      |     0.2241400874231     |
+|       13      |       sprinkling      |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       14      |         graham        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       15      |        cracker        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       16      |          add          |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       17      |        interest       |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       18      |          wine         |       1       |     11     |     0.2596373105057     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       19      |          hit          |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       20      |         palate        |       1       |     5      |     0.6020599913279     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       21      |         fleshy        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       22      |          fist         |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       23      |        intense        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       24      |         grassy        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       25      |       gooseberry      |       1       |     2      |           1.0           |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       26      |         flavor        |       1       |     5      |     0.6020599913279     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       27      |         plenty        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       28      |         punch         |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       29      |         repair        |       1       |     4      |     0.6989700043360     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       30      |     apricotglazed     |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       31      |        roasted        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
+|       32      |        chicken        |       1       |     1      |     1.3010299956639     |           1.0           |     5.8045395208937      |     0.1722789544976     |
++---------------+-----------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 18 y el documento 0 = 0.09946530075493895
+Similaridad coseno entre el documento 18 y el documento 1 = 0.11857050832961047
+Similaridad coseno entre el documento 18 y el documento 2 = 0.03787249061469889
+Similaridad coseno entre el documento 18 y el documento 3 = 0.05268523989277132
+Similaridad coseno entre el documento 18 y el documento 4 = 0.2782062968627386
+Similaridad coseno entre el documento 18 y el documento 5 = 0.12124682022641381
+Similaridad coseno entre el documento 18 y el documento 6 = 0.12524796454450488
+Similaridad coseno entre el documento 18 y el documento 7 = 0.16568748320089757
+Similaridad coseno entre el documento 18 y el documento 8 = 0.18417394933768882
+Similaridad coseno entre el documento 18 y el documento 9 = 0.21352851129873934
+Similaridad coseno entre el documento 18 y el documento 10 = 0.05436195619886061
+Similaridad coseno entre el documento 18 y el documento 11 = 0.1102859069886827
+Similaridad coseno entre el documento 18 y el documento 12 = 0.24723492146887582
+Similaridad coseno entre el documento 18 y el documento 13 = 0.21525174259353352
+Similaridad coseno entre el documento 18 y el documento 14 = 0.11710306778587967
+Similaridad coseno entre el documento 18 y el documento 15 = 0.03378668272173075
+Similaridad coseno entre el documento 18 y el documento 16 = 0.09614574010855975
+Similaridad coseno entre el documento 18 y el documento 17 = 0.11443632028242688
+Similaridad coseno entre el documento 18 y el documento 19 = 0.1171399145949119
+
+
+<< TABLE  19 >>
+
++---------------+----------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|     Index     |         Word         |     Count     |     DF     |           IDF           |            TF           |     Length of vector     |          TF-IDF         |
++---------------+----------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+|       0       |        soften        |       1       |     3      |     0.8239087409443     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       1       |        fruity        |       1       |     1      |     1.3010299956639     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       2       |          be          |       2       |     14     |     0.1549019599857     |     1.3010299956639     |     4.4028806592087      |     0.2954951760826     |
+|       3       |       generous       |       1       |     1      |     1.3010299956639     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       4       |         ripe         |       1       |     4      |     0.6989700043360     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       5       |         wine         |       2       |     11     |     0.2596373105057     |     1.3010299956639     |     4.4028806592087      |     0.2954951760826     |
+|       6       |         full         |       1       |     1      |     1.3010299956639     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       7       |        juicy         |       1       |     3      |     0.8239087409443     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       8       |      redcherry       |       1       |     1      |     1.3010299956639     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       9       |        fruits        |       1       |     1      |     1.3010299956639     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       10      |        gentle        |       1       |     1      |     1.3010299956639     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       11      |       tannins        |       1       |     4      |     0.6989700043360     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       12      |       richness       |       1       |     1      |     1.3010299956639     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       13      |         give         |       1       |     3      |     0.8239087409443     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       14      |        sweet         |       1       |     4      |     0.6989700043360     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       15      |      character       |       1       |     2      |           1.0           |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       16      |         open         |       1       |     3      |     0.8239087409443     |           1.0           |     4.4028806592087      |     0.2271240302433     |
+|       17      |     readytodrink     |       1       |     1      |     1.3010299956639     |           1.0           |     4.4028806592087      |     0.2271240302433     |
++---------------+----------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
+
+Similaridad coseno entre el documento 19 y el documento 0 = 0.41312740972886675
+Similaridad coseno entre el documento 19 y el documento 1 = 0.06779124267622168
+Similaridad coseno entre el documento 19 y el documento 2 = 0.04992921351795206
+Similaridad coseno entre el documento 19 y el documento 3 = 0.0
+Similaridad coseno entre el documento 19 y el documento 4 = 0.08070395521516753
+Similaridad coseno entre el documento 19 y el documento 5 = 0.11142278916991283
+Similaridad coseno entre el documento 19 y el documento 6 = 0.08833876916585906
+Similaridad coseno entre el documento 19 y el documento 7 = 0.1829359372436189
+Similaridad coseno entre el documento 19 y el documento 8 = 0.20037730852097654
+Similaridad coseno entre el documento 19 y el documento 9 = 0.20596628533084343
+Similaridad coseno entre el documento 19 y el documento 10 = 0.071668107226437
+Similaridad coseno entre el documento 19 y el documento 11 = 0.2696432302579703
+Similaridad coseno entre el documento 19 y el documento 12 = 0.3468510833225756
+Similaridad coseno entre el documento 19 y el documento 13 = 0.07177152178209648
+Similaridad coseno entre el documento 19 y el documento 14 = 0.09704857406520852
+Similaridad coseno entre el documento 19 y el documento 15 = 0.10249405889364864
+Similaridad coseno entre el documento 19 y el documento 16 = 0.071668107226437
+Similaridad coseno entre el documento 19 y el documento 17 = 0.2361692794557937
+Similaridad coseno entre el documento 19 y el documento 18 = 0.1171399145949119
+
+

@@ -8,10 +8,12 @@
 # This is the documentation of the recommendation system based on the content based model project implemented by Samuel Martín Morales and Aday Chocho Aisa.
 # Copyright (c) 2023 Samuel Martín Morales y Aday Chocho Aisa. All rights reserved.
 
+# LIBRARIES
 import os
 import sys
 import click
 
+# FILE IMPORTS
 from recommenadation_system import recommendation_system
 
 ##

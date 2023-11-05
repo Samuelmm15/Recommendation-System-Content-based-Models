@@ -24,15 +24,15 @@
 |       18      |      acidity       |       1       |     7      |     0.1549019599857     |           1.0           |     4.4376434117239      |     0.2253448299514     |
 +---------------+--------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
 
-Similaridad entre documento 0 y documento 1 = 0.05357359606982364
-Similaridad entre documento 0 y documento 2 = 0.0551549603780252
-Similaridad entre documento 0 y documento 3 = 0.09676560112115636
-Similaridad entre documento 0 y documento 4 = 0.0
-Similaridad entre documento 0 y documento 5 = 0.13010289823294488
-Similaridad entre documento 0 y documento 6 = 0.20155454325980554
-Similaridad entre documento 0 y documento 7 = 0.13010289823294488
-Similaridad entre documento 0 y documento 8 = 0.1257608366529168
-Similaridad entre documento 0 y documento 9 = 0.11267241497571182
+Similaridad coseno entre el documento 0 y el documento 1 = 0.05357359606982364
+Similaridad coseno entre el documento 0 y el documento 2 = 0.0551549603780252
+Similaridad coseno entre el documento 0 y el documento 3 = 0.09676560112115636
+Similaridad coseno entre el documento 0 y el documento 4 = 0.0
+Similaridad coseno entre el documento 0 y el documento 5 = 0.13010289823294488
+Similaridad coseno entre el documento 0 y el documento 6 = 0.20155454325980554
+Similaridad coseno entre el documento 0 y el documento 7 = 0.13010289823294488
+Similaridad coseno entre el documento 0 y el documento 8 = 0.1257608366529168
+Similaridad coseno entre el documento 0 y el documento 9 = 0.11267241497571182
 
 
 << TABLE  1 >>
@@ -59,15 +59,15 @@ Similaridad entre documento 0 y documento 9 = 0.11267241497571182
 |       16      |        2016        |       1       |     1      |           1.0           |           1.0           |     4.2062666403376      |     0.2377405156416     |
 +---------------+--------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
 
-Similaridad entre documento 1 y documento 0 = 0.05357359606982364
-Similaridad entre documento 1 y documento 2 = 0.11637780838629574
-Similaridad entre documento 1 y documento 3 = 0.08640148838981648
-Similaridad entre documento 1 y documento 4 = 0.15462142991118116
-Similaridad entre documento 1 y documento 5 = 0.10527944778629622
-Similaridad entre documento 1 y documento 6 = 0.2818048505864229
-Similaridad entre documento 1 y documento 7 = 0.2951787223824116
-Similaridad entre documento 1 y documento 8 = 0.11532108911519867
-Similaridad entre documento 1 y documento 9 = 0.19619714332939875
+Similaridad coseno entre el documento 1 y el documento 0 = 0.05357359606982364
+Similaridad coseno entre el documento 1 y el documento 2 = 0.11637780838629574
+Similaridad coseno entre el documento 1 y el documento 3 = 0.08640148838981648
+Similaridad coseno entre el documento 1 y el documento 4 = 0.15462142991118116
+Similaridad coseno entre el documento 1 y el documento 5 = 0.10527944778629622
+Similaridad coseno entre el documento 1 y el documento 6 = 0.2818048505864229
+Similaridad coseno entre el documento 1 y el documento 7 = 0.2951787223824116
+Similaridad coseno entre el documento 1 y el documento 8 = 0.11532108911519867
+Similaridad coseno entre el documento 1 y el documento 9 = 0.19619714332939875
 
 
 << TABLE  2 >>
@@ -93,15 +93,15 @@ Similaridad entre documento 1 y documento 9 = 0.19619714332939875
 |       15      |       fermented        |       1       |     1      |           1.0           |           1.0           |     4.0856675157943      |     0.2447580465454     |
 +---------------+------------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
 
-Similaridad entre documento 2 y documento 0 = 0.0551549603780252
-Similaridad entre documento 2 y documento 1 = 0.11637780838629574
-Similaridad entre documento 2 y documento 3 = 0.15765278157245788
-Similaridad entre documento 2 y documento 4 = 0.054482382524972686
-Similaridad entre documento 2 y documento 5 = 0.15549075308028934
-Similaridad entre documento 2 y documento 6 = 0.05472956301156653
-Similaridad entre documento 2 y documento 7 = 0.14131112405933774
-Similaridad entre documento 2 y documento 8 = 0.13659499850839085
-Similaridad entre documento 2 y documento 9 = 0.12237902327272086
+Similaridad coseno entre el documento 2 y el documento 0 = 0.0551549603780252
+Similaridad coseno entre el documento 2 y el documento 1 = 0.11637780838629574
+Similaridad coseno entre el documento 2 y el documento 3 = 0.15765278157245788
+Similaridad coseno entre el documento 2 y el documento 4 = 0.054482382524972686
+Similaridad coseno entre el documento 2 y el documento 5 = 0.15549075308028934
+Similaridad coseno entre el documento 2 y el documento 6 = 0.05472956301156653
+Similaridad coseno entre el documento 2 y el documento 7 = 0.14131112405933774
+Similaridad coseno entre el documento 2 y el documento 8 = 0.13659499850839085
+Similaridad coseno entre el documento 2 y el documento 9 = 0.12237902327272086
 
 
 << TABLE  3 >>
@@ -132,15 +132,15 @@ Similaridad entre documento 2 y documento 9 = 0.12237902327272086
 |       20      |         finish        |       1       |     2      |     0.6989700043360     |           1.0           |     4.6575400212577      |     0.2147056161484     |
 +---------------+-----------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
 
-Similaridad entre documento 3 y documento 0 = 0.09676560112115636
-Similaridad entre documento 3 y documento 1 = 0.08640148838981648
-Similaridad entre documento 3 y documento 2 = 0.15765278157245788
-Similaridad entre documento 3 y documento 4 = 0.09184721120996941
-Similaridad entre documento 3 y documento 5 = 0.1363989393471686
-Similaridad entre documento 3 y documento 6 = 0.15848124615958184
-Similaridad entre documento 3 y documento 7 = 0.08063806374094624
-Similaridad entre documento 3 y documento 8 = 0.052073760811364625
-Similaridad entre documento 3 y documento 9 = 0.06983461171164826
+Similaridad coseno entre el documento 3 y el documento 0 = 0.09676560112115636
+Similaridad coseno entre el documento 3 y el documento 1 = 0.08640148838981648
+Similaridad coseno entre el documento 3 y el documento 2 = 0.15765278157245788
+Similaridad coseno entre el documento 3 y el documento 4 = 0.09184721120996941
+Similaridad coseno entre el documento 3 y el documento 5 = 0.1363989393471686
+Similaridad coseno entre el documento 3 y el documento 6 = 0.15848124615958184
+Similaridad coseno entre el documento 3 y el documento 7 = 0.08063806374094624
+Similaridad coseno entre el documento 3 y el documento 8 = 0.052073760811364625
+Similaridad coseno entre el documento 3 y el documento 9 = 0.06983461171164826
 
 
 << TABLE  4 >>
@@ -169,15 +169,15 @@ Similaridad entre documento 3 y documento 9 = 0.06983461171164826
 |       18      |           stew          |       1       |     1      |           1.0           |           1.0           |     4.4924255365163      |     0.2225969004653     |
 +---------------+-------------------------+---------------+------------+-------------------------+-------------------------+--------------------------+-------------------------+
 
-Similaridad entre documento 4 y documento 0 = 0.0
-Similaridad entre documento 4 y documento 1 = 0.15462142991118116
-Similaridad entre documento 4 y documento 2 = 0.054482382524972686
-Similaridad entre documento 4 y documento 3 = 0.09184721120996941
-Similaridad entre documento 4 y documento 5 = 0.10611688582650383
-Similaridad entre documento 4 y documento 6 = 0.07352249936510205
-Similaridad entre documento 4 y documento 7 = 0.15917532873975576
-Similaridad entre documento 4 y documento 8 = 0.05398767838551752
-Similaridad entre documento 4 y documento 9 = 0.08220065322802667
+Similaridad coseno entre el documento 4 y el documento 0 = 0.0
+Similaridad coseno entre el documento 4 y el documento 1 = 0.15462142991118116
+Similaridad coseno entre el documento 4 y el documento 2 = 0.054482382524972686
+Similaridad coseno entre el documento 4 y el documento 3 = 0.09184721120996941
+Similaridad coseno entre el documento 4 y el documento 5 = 0.10611688582650383
+Similaridad coseno entre el documento 4 y el documento 6 = 0.07352249936510205
+Similaridad coseno entre el documento 4 y el documento 7 = 0.15917532873975576
+Similaridad coseno entre el documento 4 y el documento 8 = 0.05398767838551752
+Similaridad coseno entre el documento 4 y el documento 9 = 0.08220065322802667
 
 
 << TABLE  5 >>
@@ -214,15 +214,15 @@ Similaridad entre documento 4 y documento 9 = 0.08220065322802667
 |       26      |        grabby       |       1       |     1      |           1.0           |     1.0     |     5.1961524227066      |     0.1924500897298     |
 +---------------+---------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
 
-Similaridad entre documento 5 y documento 0 = 0.13010289823294488
-Similaridad entre documento 5 y documento 1 = 0.10527944778629622
-Similaridad entre documento 5 y documento 2 = 0.15549075308028934
-Similaridad entre documento 5 y documento 3 = 0.1363989393471686
-Similaridad entre documento 5 y documento 4 = 0.10611688582650383
-Similaridad entre documento 5 y documento 6 = 0.17213259316477408
-Similaridad entre documento 5 y documento 7 = 0.11111111111111113
-Similaridad entre documento 5 y documento 8 = 0.09335200560186732
-Similaridad entre documento 5 y documento 9 = 0.14433756729740643
+Similaridad coseno entre el documento 5 y el documento 0 = 0.13010289823294488
+Similaridad coseno entre el documento 5 y el documento 1 = 0.10527944778629622
+Similaridad coseno entre el documento 5 y el documento 2 = 0.15549075308028934
+Similaridad coseno entre el documento 5 y el documento 3 = 0.1363989393471686
+Similaridad coseno entre el documento 5 y el documento 4 = 0.10611688582650383
+Similaridad coseno entre el documento 5 y el documento 6 = 0.17213259316477408
+Similaridad coseno entre el documento 5 y el documento 7 = 0.11111111111111113
+Similaridad coseno entre el documento 5 y el documento 8 = 0.09335200560186732
+Similaridad coseno entre el documento 5 y el documento 9 = 0.14433756729740643
 
 
 << TABLE  6 >>
@@ -252,15 +252,15 @@ Similaridad entre documento 5 y documento 9 = 0.14433756729740643
 |       19      |     tannins      |       1       |     2      |     0.6989700043360     |     1.0     |     4.4721359549995      |     0.2236067977499     |
 +---------------+------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
 
-Similaridad entre documento 6 y documento 0 = 0.20155454325980554
-Similaridad entre documento 6 y documento 1 = 0.2818048505864229
-Similaridad entre documento 6 y documento 2 = 0.05472956301156653
-Similaridad entre documento 6 y documento 3 = 0.15848124615958184
-Similaridad entre documento 6 y documento 4 = 0.07352249936510205
-Similaridad entre documento 6 y documento 5 = 0.17213259316477408
-Similaridad entre documento 6 y documento 7 = 0.19364916731037085
-Similaridad entre documento 6 y documento 8 = 0.10846522890932808
-Similaridad entre documento 6 y documento 9 = 0.22360679774997896
+Similaridad coseno entre el documento 6 y el documento 0 = 0.20155454325980554
+Similaridad coseno entre el documento 6 y el documento 1 = 0.2818048505864229
+Similaridad coseno entre el documento 6 y el documento 2 = 0.05472956301156653
+Similaridad coseno entre el documento 6 y el documento 3 = 0.15848124615958184
+Similaridad coseno entre el documento 6 y el documento 4 = 0.07352249936510205
+Similaridad coseno entre el documento 6 y el documento 5 = 0.17213259316477408
+Similaridad coseno entre el documento 6 y el documento 7 = 0.19364916731037085
+Similaridad coseno entre el documento 6 y el documento 8 = 0.10846522890932808
+Similaridad coseno entre el documento 6 y el documento 9 = 0.22360679774997896
 
 
 << TABLE  7 >>
@@ -282,15 +282,15 @@ Similaridad entre documento 6 y documento 9 = 0.22360679774997896
 |       11      |        food       |       1       |     1      |           1.0           |     1.0     |     3.4641016151377      |     0.2886751345948     |
 +---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
 
-Similaridad entre documento 7 y documento 0 = 0.13010289823294488
-Similaridad entre documento 7 y documento 1 = 0.2951787223824116
-Similaridad entre documento 7 y documento 2 = 0.14131112405933774
-Similaridad entre documento 7 y documento 3 = 0.08063806374094624
-Similaridad entre documento 7 y documento 4 = 0.15917532873975576
-Similaridad entre documento 7 y documento 5 = 0.11111111111111113
-Similaridad entre documento 7 y documento 6 = 0.19364916731037085
-Similaridad entre documento 7 y documento 8 = 0.0700140042014005
-Similaridad entre documento 7 y documento 9 = 0.43301270189221935
+Similaridad coseno entre el documento 7 y el documento 0 = 0.13010289823294488
+Similaridad coseno entre el documento 7 y el documento 1 = 0.2951787223824116
+Similaridad coseno entre el documento 7 y el documento 2 = 0.14131112405933774
+Similaridad coseno entre el documento 7 y el documento 3 = 0.08063806374094624
+Similaridad coseno entre el documento 7 y el documento 4 = 0.15917532873975576
+Similaridad coseno entre el documento 7 y el documento 5 = 0.11111111111111113
+Similaridad coseno entre el documento 7 y el documento 6 = 0.19364916731037085
+Similaridad coseno entre el documento 7 y el documento 8 = 0.0700140042014005
+Similaridad coseno entre el documento 7 y el documento 9 = 0.43301270189221935
 
 
 << TABLE  8 >>
@@ -317,15 +317,15 @@ Similaridad entre documento 7 y documento 9 = 0.43301270189221935
 |       16      |     footprint     |       1       |     1      |           1.0           |     1.0     |     4.1231056256176      |     0.2425356250363     |
 +---------------+-------------------+---------------+------------+-------------------------+-------------+--------------------------+-------------------------+
 
-Similaridad entre documento 8 y documento 0 = 0.1257608366529168
-Similaridad entre documento 8 y documento 1 = 0.11532108911519867
-Similaridad entre documento 8 y documento 2 = 0.13659499850839085
-Similaridad entre documento 8 y documento 3 = 0.052073760811364625
-Similaridad entre documento 8 y documento 4 = 0.05398767838551752
-Similaridad entre documento 8 y documento 5 = 0.09335200560186732
-Similaridad entre documento 8 y documento 6 = 0.10846522890932808
-Similaridad entre documento 8 y documento 7 = 0.0700140042014005
-Similaridad entre documento 8 y documento 9 = 0.06063390625908324
+Similaridad coseno entre el documento 8 y el documento 0 = 0.1257608366529168
+Similaridad coseno entre el documento 8 y el documento 1 = 0.11532108911519867
+Similaridad coseno entre el documento 8 y el documento 2 = 0.13659499850839085
+Similaridad coseno entre el documento 8 y el documento 3 = 0.052073760811364625
+Similaridad coseno entre el documento 8 y el documento 4 = 0.05398767838551752
+Similaridad coseno entre el documento 8 y el documento 5 = 0.09335200560186732
+Similaridad coseno entre el documento 8 y el documento 6 = 0.10846522890932808
+Similaridad coseno entre el documento 8 y el documento 7 = 0.0700140042014005
+Similaridad coseno entre el documento 8 y el documento 9 = 0.06063390625908324
 
 
 << TABLE  9 >>
@@ -351,14 +351,14 @@ Similaridad entre documento 8 y documento 9 = 0.06063390625908324
 |       15      |      drink      |       1       |     1      |           1.0           |     1.0     |           4.0            |      0.25      |
 +---------------+-----------------+---------------+------------+-------------------------+-------------+--------------------------+----------------+
 
-Similaridad entre documento 9 y documento 0 = 0.11267241497571182
-Similaridad entre documento 9 y documento 1 = 0.19619714332939875
-Similaridad entre documento 9 y documento 2 = 0.12237902327272086
-Similaridad entre documento 9 y documento 3 = 0.06983461171164826
-Similaridad entre documento 9 y documento 4 = 0.08220065322802667
-Similaridad entre documento 9 y documento 5 = 0.14433756729740643
-Similaridad entre documento 9 y documento 6 = 0.22360679774997896
-Similaridad entre documento 9 y documento 7 = 0.43301270189221935
-Similaridad entre documento 9 y documento 8 = 0.06063390625908324
+Similaridad coseno entre el documento 9 y el documento 0 = 0.11267241497571182
+Similaridad coseno entre el documento 9 y el documento 1 = 0.19619714332939875
+Similaridad coseno entre el documento 9 y el documento 2 = 0.12237902327272086
+Similaridad coseno entre el documento 9 y el documento 3 = 0.06983461171164826
+Similaridad coseno entre el documento 9 y el documento 4 = 0.08220065322802667
+Similaridad coseno entre el documento 9 y el documento 5 = 0.14433756729740643
+Similaridad coseno entre el documento 9 y el documento 6 = 0.22360679774997896
+Similaridad coseno entre el documento 9 y el documento 7 = 0.43301270189221935
+Similaridad coseno entre el documento 9 y el documento 8 = 0.06063390625908324
 
 

@@ -146,11 +146,15 @@ def recommendation_system(document_file, stop_word_file, lematization_of_terms_f
 
   print("Starting similarity matrix")
   sim_matrix = []
+
   for i in range(len(documents)):
     sim_matrix.append([])
+    for j in range(len(documents)):
+      sim_matrix[i].append(0.0)
+  
+  for i in range(len(documents)):
     for j in range(i,len(documents)):
       print("Fisrt Document", i, ",Second Document", j)
-      sim_matrix[i].append(0.0)
       for k in range(len(word_similarity)):
         sim_matrix[i][j] += word_similarity[k][i+1]*word_similarity[k][j+1]
       sim_matrix[j][i] = sim_matrix[i][j]

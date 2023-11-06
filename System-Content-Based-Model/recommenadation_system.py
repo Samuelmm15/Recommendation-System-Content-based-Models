@@ -61,7 +61,6 @@ def recommendation_system(document_file, stop_word_file, lematization_of_terms_f
   lematization_of_terms_data = read_lematization_of_terms_file(lematization_of_terms_file)
 
   for i in range(len(documents)):
-    print("Lematization: Document", i)
     for j in range(len(documents[i])):
       if documents[i][j] in lematization_of_terms_data[0]:
         documents[i][j] = lematization_of_terms_data[1][lematization_of_terms_data[0].index(documents[i][j])]
@@ -84,7 +83,6 @@ def recommendation_system(document_file, stop_word_file, lematization_of_terms_f
 
   # DF and IDF calculation
   for i in range(len(documents_matrices)):
-    print("DF: Document", i)
     for j in range(len(documents_matrices[i])):
       documents_matrices[i][j].append(0) # DF
       for k in range(len(documents)):
@@ -108,7 +106,6 @@ def recommendation_system(document_file, stop_word_file, lematization_of_terms_f
       documents_matrices[i][j].append(documents_matrices[i][j][5] / lenght_of_vector) # TF-IDF
 
   # Similarity calculation
-  print("Starting similarity matrix")
   sim_matrix = []
 
   for i in range(len(documents)):
@@ -118,7 +115,6 @@ def recommendation_system(document_file, stop_word_file, lematization_of_terms_f
   
   for i in range(len(documents)):
     for j in range(i,len(documents)):
-      print("Fisrt Document", i, ",Second Document", j)
       if i != j:
         word_similarity = list(dict.fromkeys(documents[i] + documents[j]))
 
@@ -139,9 +135,6 @@ def recommendation_system(document_file, stop_word_file, lematization_of_terms_f
         sim_matrix[i][j] = similarity
         sim_matrix[j][i] = sim_matrix[i][j]
       
-  print("Finished")
-  print(documents[0])
-  print(documents[7])
 
   print("Writing file")
   write_file_system(documents_matrices, document_file, sim_matrix)

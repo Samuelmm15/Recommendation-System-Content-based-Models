@@ -79,10 +79,14 @@ def read_lematization_of_terms_file(input_file):
             string += line.replace("\n", "")
           string = string.replace("{", "")
           string = string.replace("}", "")
-          lematization_list = string.split(",")
-          for i in range(len(lematization_list)):
-            lematization_list[i] = lematization_list[i].replace("\"", "")
-            lematization_list[i] = lematization_list[i].split(":")
+          lematization_pair = string.split(",")
+          lematization_list = [[],[]]
+          for i in range(len(lematization_pair)):
+            lematization_pair[i] = lematization_pair[i].replace("\"", "")
+            lematization_pair[i] = lematization_pair[i].split(":")
+            lematization_list[0].append(lematization_pair[0])
+            lematization_list[1].append(lematization_pair[1])
+
       except FileNotFoundError:
         print(f"The file {input_file} doesn't exist.")
         sys.exit(1)

@@ -17,7 +17,7 @@ Para la segunda opción del sistema POSIX, la opción `-p`, se debe introducir e
 
 ### Tercer parámetro: Fichero de lematización.
 
-Para la tercera opción del sistema POSIX, la opción `l`, se debe de introducir el fichero de lematización, es decir, el fichero el cual contiene las distintas palabras que se van a lematizar. Este, debe contener una palabra por cada línea. El fichero de lematización debe ser un fichero de texto plano, con extensión .txt.
+Para la tercera opción del sistema POSIX, la opción `-l`, se debe de introducir el fichero de lematización, es decir, el fichero el cual contiene las distintas palabras que se van a lematizar. Este, debe contener una palabra por cada línea. El fichero de lematización debe ser un fichero de texto plano, con extensión .txt.
 
 📌 Para más información sobre el funcionamiento del programa, el uso de argumentos y la ejecución del mismo, se puede consultar el apartado [Ejecución del programa](#-ejecución-del-programa).
 

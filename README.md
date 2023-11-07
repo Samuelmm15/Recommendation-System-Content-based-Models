@@ -62,13 +62,13 @@ Accediendo a dicho fichero, se ejecuta el navegador `Firefox` y se muestra la do
 
 En la siguiente imagen, se puede observar un ejemplo de la documentación generada por `Doxygen`:
 
-<img width="1680" alt="Doxygen-documentation-GCO-P2" src="https://github.com/Samuelmm15/Recommendation-System-Content-based-Models/assets/72341631/d6e4a90a-ebf2-4442-8f1c-47c9c77a7a01">
+<img width="1680" alt="Doxygen-documentation-GCO-P2" src="https://github.com/Samuelmm15/Recommendation-System-Content-based-Models/assets/72341631/1b45dbe8-4867-439c-b661-1b814ca46184">
 
 ## 🔧 Ejemplo de ejecución del programa.
 
 A continuación, se muestra un ejemplo de ejecución del programa:
 
-https://github.com/Samuelmm15/Recommendation-System-Content-based-Models/assets/72341631/2d627b71-1022-449f-8968-b930900cc7df
+https://github.com/Samuelmm15/Recommendation-System-Content-based-Models/assets/72341631/f9661bc2-8790-4f8f-80a2-c7dbec3b1f31
 
 ## 📝 Licencia
 
